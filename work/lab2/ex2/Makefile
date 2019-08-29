@@ -1,2 +1,2 @@
 all:
-  		echo "hello $$USER"
+	echo "hello $$USER"\
