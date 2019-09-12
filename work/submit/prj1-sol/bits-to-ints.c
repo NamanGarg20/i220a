@@ -75,15 +75,25 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
      }    
   
  }            
-      int ex=1<<(nBits-1);
-            for(int i=nBits-1;i>=0;i--){
+      int ex=1;
+	BitsValue byte[nBits/4];
+	BitsValue r=0;
+	for(int j=0; j<nBits/4;j++){
+            for(int i=j*4;i<j*4+4;i++){
       
-        value += ex * bits[i];
-        ex>>=1;
+        r += ex * bits[i];
+	
+        ex<<=1;
         
             }
-
-
+	byte[j]=r;
+}
+	for(int k=0;k<nBits/4;k++){
+	if(k%3!=0){
+		value=byte[k];
+	}
+	value = byte[k];
+}
       
     return value;
   
