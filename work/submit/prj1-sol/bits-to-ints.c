@@ -54,17 +54,16 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   *isEof = false;
     
 
-    while(count<nBits){ 
+    while(count<nBits && *isEof==false){ 
       char c = fgetc(inFile);
     if(c!=EOF){
+    	*isEof = false;
     if(c!='0' && c!='1' && !isspace(c)){
-      error("entered data should be binary for");
-      
+      error("entered data %c should be binary ",&c);
       
     }
   }
   else{
-    error("unexpected end of file");
     *isEof=true;
   }
     
@@ -74,15 +73,29 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
         count++;
      }    
   
- }            
-      int ex=1<<(nBits-1);
-            for(int i=nBits-1;i>=0;i--){
+ }    long long ex=1;
+ 		for(int j=0; j<nBits/4;j++){
+            
+            for(int i=j*4;i<j*4+4;i++){
       
         value += ex * bits[i];
-        ex>>=1;
+  
+        ex<<=1;
         
             }
-
+}	if(nBits==16){// conversion from little endian to big endian
+	value = ((value & 0xFFU) << 8 | (value & 0xFF00U) >> 8); // got the method for this from site www.csharp-examples.net/reverse-bytes/
+}
+if(nBits==32){
+	value=(value & 0x000000FFU) << 24 | (value & 0x0000FF00U) << 8 |
+         (value & 0x00FF0000U) >> 8 | (value & 0xFF000000U) >> 24;
+}
+if(nBits==64){
+	value = (value & 0x00000000000000FFUL) << 56 | (value & 0x000000000000FF00UL) << 40 |
+         (value & 0x0000000000FF0000UL) << 24 | (value & 0x00000000FF000000UL) << 8 |
+         (value & 0x000000FF00000000UL) >> 8 | (value & 0x0000FF0000000000UL) >> 24 |
+         (value & 0x00FF000000000000UL) >> 40 | (value & 0xFF00000000000000UL) >> 56;
+}
 
       
     return value;
