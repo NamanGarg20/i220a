@@ -73,6 +73,7 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
         count++;
      }    
   
+<<<<<<< HEAD
  }    long long ex=1;
  		for(int j=0; j<nBits/4;j++){
             
@@ -97,6 +98,28 @@ if(nBits==64){
          (value & 0x00FF000000000000UL) >> 40 | (value & 0xFF00000000000000UL) >> 56;
 }
 
+=======
+ }            
+      int ex=1;
+	BitsValue byte[nBits/4];
+	BitsValue r=0;
+	for(int j=0; j<nBits/4;j++){
+            for(int i=j*4;i<j*4+4;i++){
+      
+        r += ex * bits[i];
+	
+        ex<<=1;
+        
+            }
+	byte[j]=r;
+}
+	for(int k=0;k<nBits/4;k++){
+	if(k%3!=0){
+		value=byte[k];
+	}
+	value = byte[k];
+}
+>>>>>>> b56c1be017ecb6e6ccfb5e4ac3d5f68c5c0cfde0
       
     return value;
   

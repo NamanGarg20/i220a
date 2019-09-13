@@ -1,0 +1,39 @@
+ex1
+3
+uint = 3 (0x3); ushort = 3 (0x3)
+45
+uint = 45 (0x2d); ushort = 45 (0x2d)
+uint = 65535 (0xffff); ushort = 65535 (0xffff)
+
+ex2
+ngarg3@g7-27:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab4/files/ex2$ ./ints
+65535
+int = 65535 (0xffff); short = -1 (0xffffffff)
+
+ex3
+2147483649
+mystery = 4732489 (0x483649)
+lowest bit n returned is 7.
+
+ex4
+0
+0 == -0
+
+
+
+output of ex5 python file.
+
+ngarg3@g7-27:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab4/files/ex5$ python lab4.py
+2147483648
+
+ex6
+0.99999999999999988898 0
+not equal to 1
+
+ex7
+0
+x = -nan
+^C
+ ex9
+ min power 2 input causes the loop to br infinite
+ 1.75922e+13
