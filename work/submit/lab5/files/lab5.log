@@ -1,0 +1,123 @@
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex1$ make 
+cc -g -Wall -std=c11 -m32    pointers.c   -o pointers
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex1$ ./pointers
+char pointer cp = 0xfffc315b, pointing at char a
+char pointer cp = 0xfffc315c, pointing at char b
+char pointer cp = 0xfffc315d, pointing at char c
+char pointer cp = 0xfffc315e, pointing at char d
+char pointer cp = 0xfffc315f, pointing at char e
+int pointer ip = 0xfffc3144, pointing at int 1
+int pointer ip = 0xfffc3148, pointing at int 2
+int pointer ip = 0xfffc314c, pointing at int 3
+int pointer ip = 0xfffc3150, pointing at int 4
+int pointer ip = 0xfffc3154, pointing at int 5
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex1$ ./pointers
+char pointer cp = 0xffe06e6b, pointing at char a
+char pointer cp = 0xffe06e6c, pointing at char b
+char pointer cp = 0xffe06e6d, pointing at char c
+char pointer cp = 0xffe06e6e, pointing at char d
+char pointer cp = 0xffe06e6f, pointing at char e
+int pointer ip = 0xffe06e54, pointing at int 1
+int pointer ip = 0xffe06e58, pointing at int 2
+int pointer ip = 0xffe06e5c, pointing at int 3
+int pointer ip = 0xffe06e60, pointing at int 4
+int pointer ip = 0xffe06e64, pointing at int 5
+
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex2$ make
+cc -g -Wall -std=c11 -m32    in-pointers.c   -o in-pointers
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex2$ ./in-pointers
+is[] is at 0xffaa43ac
+enter pointer to is[1]: ffaa43ad
+not ok
+is[] is at 0xffaa43ac
+enter pointer to is[1]: ffaa43af
+not ok
+is[] is at 0xffaa43ac
+enter pointer to is[1]: ffaa43ae
+not ok
+is[] is at 0xffaa43ac
+enter pointer to is[1]: ffaa43b0
+ok
+is[] is at 0xffaa43ac
+
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex3$ make
+cc -g -Wall -std=c11 -m32    bad-types.c   -o bad-types
+bad-types.c: In function ‘main’:
+bad-types.c:6:14: warning: initialization of ‘char *’ from incompatible pointer type ‘int *’ [-Wincompatible-pointer-types]
+   char *cp = is;
+              ^~
+bad-types.c:7:13: warning: initialization of ‘int *’ from incompatible pointer type ‘char *’ [-Wincompatible-pointer-types]
+   int *ip = cs;
+             ^~
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex3$ ./bad-types
+char pointer cp = 0xff8c3884, pointing at char '' (0x1)
+char pointer cp = 0xff8c3885, pointing at char '' (0x0)
+char pointer cp = 0xff8c3886, pointing at char '' (0x0)
+char pointer cp = 0xff8c3887, pointing at char '' (0x0)
+char pointer cp = 0xff8c3888, pointing at char '' (0x2)
+int pointer ip = 0xff8c389b, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0xff8c389f, pointing at int 357 (0x165)
+int pointer ip = 0xff8c38a3, pointing at int 1280 (0x500)
+int pointer ip = 0xff8c38a7, pointing at int -1942444288 (0x8c38a700)
+int pointer ip = 0xff8c38ab, pointing at int -1942451713 (0x8c3889ff)
+
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex4$ make
+cc -g -Wall -std=c11 -m32    cast-types.c   -o cast-types
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex4$ ./cast-types
+char pointer cp = 0xffd500c4, pointing at int 1 (0x1)
+char pointer cp = 0xffd500c8, pointing at int 2 (0x2)
+char pointer cp = 0xffd500cc, pointing at int 3 (0x3)
+char pointer cp = 0xffd500d0, pointing at int 4 (0x4)
+char pointer cp = 0xffd500d4, pointing at int 5 (0x5)
+int pointer ip = 0xffd500db, pointing at char 'a' (0x64636261)
+int pointer ip = 0xffd500dc, pointing at char 'b' (0x65646362)
+int pointer ip = 0xffd500dd, pointing at char 'c' (0x2656463)
+int pointer ip = 0xffd500de, pointing at char 'd' (0x36564)
+int pointer ip = 0xffd500df, pointing at char 'e' (0x465)
+
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex5$ make
+cc -g -Wall -std=c11 -m32    void-pointers.c   -o void-pointers
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex5$ ./void-pointers
+void pointer p = 0xffb971ef, pointing at char a
+void pointer p = 0xffb971f0, pointing at char b
+void pointer p = 0xffb971f1, pointing at char c
+void pointer p = 0xffb971f2, pointing at char d
+void pointer p = 0xffb971f3, pointing at char e
+void pointer p = 0xffb971d8, pointing at int 1
+void pointer p = 0xffb971dc, pointing at int 2
+void pointer p = 0xffb971e0, pointing at int 3
+void pointer p = 0xffb971e4, pointing at int 4
+void pointer p = 0xffb971e8, pointing at int 5
+
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex6$ make
+cc -g -Wall -std=c11 -m32    in-voids.c   -o in-voids
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/submit/lab5/files/ex6$ ./in-voids
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to is[2]: 0xff83ae9c  
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to cs[3]: 0xff83aeae
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to is[4]: 0xff83aea4
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to cs[1]: 0xff83aeac
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to cs[4]: 0xff83aeaf
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to is[1]: 0xff83ae98
+ok
+
+
+
+
+
+
+
+
+
+
+
