@@ -1,14 +1,30 @@
-ex1
 
 ex2
+is[] is at 0xffaa43ac
+enter pointer to is[1]: ffaa43b0
+ok
 
-ex3
-
-ex4
 
 ex5
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to is[2]: 0xff83ae9c  
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to cs[3]: 0xff83aeae
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to is[4]: 0xff83aea4
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to cs[1]: 0xff83aeac
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to cs[4]: 0xff83aeaf
+ok
+cs[] is at 0xff83aeab; is[] is at 0xff83ae94
+enter pointer to is[1]: 0xff83ae98
+ok
 
-ex6
 
 
 
