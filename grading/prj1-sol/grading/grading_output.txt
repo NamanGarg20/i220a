@@ -4,8 +4,11 @@ Grader Name: Li Yongheng
 
 ----------(40%) 0. compile program-----------
 $ make
-make: *** No targets specified and no makefile found.  Stop.
->>> output: compilation failed.
+gcc -g -Wall -std=c11   -c -o main.o main.c
+gcc -g -Wall -std=c11   -c -o bits-to-ints.o bits-to-ints.c
+gcc -g -Wall -std=c11   -c -o errors.o errors.c
+gcc main.o bits-to-ints.o errors.o  -o bits-to-ints
+>>> output: compilation succeeded.
 +++ result: -0
 +++ comment: 
 ----------(2%) 1. good_input_1 8 bits-----------
@@ -20,7 +23,14 @@ e9
 00
 ff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+81
+ab
+55
+e6
+90
+e9
+00
+ff
 +++ result: -0
 +++ comment: 
 ----------(2%) 2. good_input_1 16 bits-----------
@@ -31,7 +41,10 @@ $ ./bits-to-ints 16 grading/input_good_1.txt
 90e9
 00ff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+81ab
+55e6
+90e9
+00ff
 +++ result: -0
 +++ comment: 
 ----------(2%) 3. good_input_1 32 bits-----------
@@ -40,7 +53,8 @@ $ ./bits-to-ints 32 grading/input_good_1.txt
 81ab55e6
 90e900ff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+81ab55e6
+90e900ff
 +++ result: -0
 +++ comment: 
 ----------(2%) 4. good_input_1 64 bits-----------
@@ -48,7 +62,7 @@ $ ./bits-to-ints 64 grading/input_good_1.txt
 >>> expect: 
 81ab55e690e900ff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+81ab55e690e900ff
 +++ result: -0
 +++ comment: 
 ----------(2%) 5. good_input_2 8 bits-----------
@@ -63,7 +77,14 @@ ff
 ff
 ff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+00
+00
+00
+00
+ff
+ff
+ff
+ff
 +++ result: -0
 +++ comment: 
 ----------(2%) 6. good_input_2 16 bits-----------
@@ -74,7 +95,10 @@ $ ./bits-to-ints 16 grading/input_good_2.txt
 ffff
 ffff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+0000
+0000
+ffff
+ffff
 +++ result: -0
 +++ comment: 
 ----------(2%) 7. good_input_2 32 bits-----------
@@ -83,7 +107,8 @@ $ ./bits-to-ints 32 grading/input_good_2.txt
 00000000
 ffffffff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+00000000
+ffffffff
 +++ result: -0
 +++ comment: 
 ----------(2%) 8. good_input_2 64 bits-----------
@@ -91,7 +116,7 @@ $ ./bits-to-ints 64 grading/input_good_2.txt
 >>> expect: 
 00000000ffffffff
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+00000000ffffffff
 +++ result: -0
 +++ comment: 
 ----------(2%) 9. good_input_3 8 bits-----------
@@ -106,7 +131,14 @@ ab
 cd
 ef
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+01
+23
+45
+67
+89
+ab
+cd
+ef
 +++ result: -0
 +++ comment: 
 ----------(2%) 10. good_input_3 16 bits-----------
@@ -117,7 +149,10 @@ $ ./bits-to-ints 16 grading/input_good_3.txt
 89ab
 cdef
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+0123
+4567
+89ab
+cdef
 +++ result: -0
 +++ comment: 
 ----------(2%) 11. good_input_3 32 bits-----------
@@ -126,7 +161,8 @@ $ ./bits-to-ints 32 grading/input_good_3.txt
 01234567
 89abcdef
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+01234567
+89abcdef
 +++ result: -0
 +++ comment: 
 ----------(2%) 12. good_input_3 64 bits-----------
@@ -134,7 +170,7 @@ $ ./bits-to-ints 64 grading/input_good_3.txt
 >>> expect: 
 0123456789abcdef
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+0123456789abcdef
 +++ result: -0
 +++ comment: 
 ----------(2%) 13. good_input_4 8 bits-----------
@@ -149,7 +185,14 @@ $ ./bits-to-ints 8 grading/input_good_4.txt
 00
 00
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+00
+00
+00
+00
+00
+00
+00
+00
 +++ result: -0
 +++ comment: 
 ----------(2%) 14. good_input_4 16 bits-----------
@@ -160,7 +203,10 @@ $ ./bits-to-ints 16 grading/input_good_4.txt
 0000
 0000
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+0000
+0000
+0000
+0000
 +++ result: -0
 +++ comment: 
 ----------(2%) 15. good_input_4 32 bits-----------
@@ -169,7 +215,8 @@ $ ./bits-to-ints 32 grading/input_good_4.txt
 00000000
 00000000
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+00000000
+00000000
 +++ result: -0
 +++ comment: 
 ----------(2%) 16. good_input_4 64 bits-----------
@@ -177,7 +224,7 @@ $ ./bits-to-ints 64 grading/input_good_4.txt
 >>> expect: 
 0000000000000000
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
+0000000000000000
 +++ result: -0
 +++ comment: 
 ----------(1%) 17. bad_input_1 16 bits-----------
@@ -185,45 +232,51 @@ $ ./bits-to-ints 16 grading/input_bad_1.txt
 >>> expect: 
 unexpected character 'a' in file grading/input_bad_1.txt
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
-+++ result: -0
-+++ comment: 
+entered data [ should be binary 
+0f53
++++ result: -0.5
++++ comment: not complete error msg
 ----------(1%) 18. bad_input_2 16 bits-----------
 $ ./bits-to-ints 16 grading/input_bad_2.txt
 >>> expect: 
 unexpected EOF within byte in file grading/input_bad_2.txt
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
-+++ result: -0
-+++ comment: 
++++ result: -1
++++ comment: no error msg
 ----------(1%) 19. bad_input_3 8 bits-----------
 $ ./bits-to-ints 8 grading/input_bad_3.txt
 >>> expect: 
 00
 unexpected EOF within byte in file grading/input_bad_3.txt
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
-+++ result: -0
-+++ comment: 
+00
++++ result: -1
++++ comment: no error msg
 ----------(1%) 20. bad_input_4 8 bits-----------
 $ ./bits-to-ints 8 grading/input_bad_4.txt
 >>> expect: 
 7f
 unexpected character 'a' in file grading/input_bad_4.txt
 >>> output: 
-timeout: failed to run command ‘./bits-to-ints’: No such file or directory
-+++ result: -0
-+++ comment: 
+entered data k should be binary 
+7f
++++ result: -0.5
++++ comment: not complete error msg
 
 --------------------Summary--------------------
-Grading Time: Thu 19 Sep 2019 04:30:02 PM EDT
+Grading Time: Fri 20 Sep 2019 11:23:47 AM EDT
 Project Due Date: Wed Sep 12 23:59:59 2019 -0400
 GitHub Submission Info: 
+commit a734ad03686ed3bebc4d75c17ead5631dbfd45b8
+Author: Naman Garg <ngarg3@binghamton.edu>
+Date:   Fri Sep 20 11:05:53 2019 -0400
 
-Late Date Used: 
-Late Date Left: 7
+    resubmitte project1
+
+Late Date Used: 1 
+Late Date Left: 6
 Late Submission Penalty: -0
 
 Coding Style: -0
 
-Total Points: 
+Total Points: 97 
