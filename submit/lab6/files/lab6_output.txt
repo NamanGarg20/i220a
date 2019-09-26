@@ -1,0 +1,11 @@
+ex1:
+
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/process-memory$ make
+cc -g -Wall -std=c11 -O1    process-memory.c   -o process-memory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/process-memory$ ./process-memory 10&
+[1] 28325
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/process-memory$ 10 MB allocated at 0x7fc416869010
+4
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/process-memory$ ./process_memory 100&
+[1] 29023
+
