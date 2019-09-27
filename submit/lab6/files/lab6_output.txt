@@ -6,6 +6,73 @@ ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/proces
 [1] 28325
 ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/process-memory$ 10 MB allocated at 0x7fc416869010
 4
-ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/submit/lab6/files/process-memory$ ./process_memory 100&
-[1] 29023
+ngarg3@remote02:~/git-repos/i220a/submit/lab6/files/process-memory$ ./process-memory 100 &
+[4] 2662
+ngarg3@remote02:~/git-repos/i220a/submit/lab6/files/process-memory$ 100 MB allocated at 0x7f5700bf2010
+ps -Fp 2662
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+ngarg3    2662 18391  0 26170   748   2 22:21 pts/11   00:00:00 ./process-memory 100
+[3]   Done                    ./process-memory 10
 
+
+ex2
+ngarg3@remote02:~/git-repos/i220a/submit/lab6/files/bug-program$./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+
+no change in output
+
+ex3
+ngarg3@remote02:~/git-repos/i220a/submit/lab6/files/bug-program$ MALLOC_CHECK_=1 ./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+free(): invalid pointer
+Aborted
+
+changed the null pointer implementation in malloc
+
+ex4:
+
+No errors found by valgrind after this was implemented.

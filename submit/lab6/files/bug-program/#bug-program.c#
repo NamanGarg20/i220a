@@ -18,7 +18,7 @@ static struct KeyValue *
 add_key_value(struct KeyValue *keyValues, const char *k, int v)
 {
   //allocate storage for new KeyValue struct
-  struct KeyValue *kv = malloc(sizeof(struct KeyValue));
+  struct KeyValue *kv = malloc(sizeof(keyValues));
 
   //allocate storage for string pointed to by k
   char *s = malloc(strlen(k)+1);
@@ -39,16 +39,15 @@ static void
 free_key_values(struct KeyValue *keyValues)
 {
   //go thru chain of keyValues
+  for (struct KeyValue *p = keyValues; p != NULL; p = p->succ) {
 	
-  for (struct KeyValue *p= keyValues; p != NULL;p=keyValues) {
-  	keyValues=keyValues->succ;
 	free((char *)p->key);
+	p->keys=NULL;
 	free(p);
 	
+	   
 	 //free KeyValue struct
   }
-
-  
 
 }
 
@@ -64,7 +63,7 @@ make_key_values(void) {
     "and", "the", "mome", "raths", "outgrabe",
   };
   struct KeyValue *p = NULL;
-  for (int i = 0; i < (sizeof(keys))/sizeof(keys[0]); i++) {
+  for (int i = 0; i < (sizeof(keys)+1)/sizeof(keys[0]); i++) {
     p = add_key_value(p, keys[i], i);
   }
   return p;
