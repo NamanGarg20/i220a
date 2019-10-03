@@ -1,0 +1,15 @@
+ex3:
+in the f.c the function is referencing any variable to have a value -0.0. The function does not define which variable in main.c and as a result by calling the function the memory address of the both x and y in main.c overflow. Moreover, f.c takes in double data type whereas in main.c we are calling the function with integer.
+
+ex6:
+testvec-static:
+address of
+main : 0x401bf6
+addvec : 0x401f1f
+multvec : 0x401f8e
+
+testvec-dynamic:
+address of
+main : 0x11ee
+addvec : 0x1060 
+multvec : 0x1050
