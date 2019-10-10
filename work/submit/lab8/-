@@ -1,0 +1,564 @@
+Script started on 2019-10-10 11:40:00-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+ngarg3@g7-18:/import/linux/home1/ngarg3/git-repos/i220a/work/lab8$ cd ~/git-repo s
+ngarg3@g7-18:~/git-repos$ mkdir lab8.git
+ngarg3@g7-18:~/git-repos$ cd lab8.git
+ngarg3@g7-18:~/git-repos/lab8.git$ git init --bare
+Initialized empty Git repository in /import/linux/home1/ngarg3/git-repos/lab8.git/
+ngarg3@g7-18:~/git-repos/lab8.git$ mkdir -p ~/tmp 
+ngarg3@g7-18:~/git-repos/lab8.git$ cd /[K~/tmp
+ngarg3@g7-18:~/tmp$ git clone \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[1PN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[Cg@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[Ca@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Cloning into 'lab8'...
+ngarg3@remote.cs.binghamton.edu's password: 
+fatal: '/home/LOGIN/git-repos/lab8.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ngarg3@g7-18:~/tmp$ git clone   ssh://ngarg3@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN/g[1Pit-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/gi[1Pt-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git[1P-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-[1Prepos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-r[1Pepos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg/git-repos/lab8.git3/git-repos/lab8.git[C
+Cloning into 'lab8'...
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.203' to the list of known hosts.
+ngarg3@remote.cs.binghamton.edu's password: 
+warning: You appear to have cloned an empty repository.
+ngarg3@g7-18:~/tmp$ cd lab8
+ngarg3@g7-18:~/tmp/lab8$ git remote -v
+origin	ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git (fetch)
+origin	ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git (push)
+ngarg3@g7-18:~/tmp/lab8$ ls
+ngarg3@g7-18:~/tmp/lab8$ mkdir -p work/lab8
+ngarg3@g7-18:~/tmp/lab8$ cd worl[Kk/lab8
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cp[K[Kcp ~/cs220/labs/lab8/files/README.md
+cp: missing destination file operand after '/home/ngarg3/cs220/labs/lab8/files/README.md'
+Try 'cp --help' for more information.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ $ cp ~/cs220/labs/lab8/files/README.md .
+bash: $: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ $ cp ~/cs220/labs/lab8/files/README.md .[1P
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git sts[Katus
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git add rera[K[Kadme[K[K[K[K[K[KREADME.md
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git statis[K[Kus --short
+[32mA[m  README.md
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -m 'added README'
+[master (root-commit) e613b71] added README
+ 1 file changed, 4 insertions(+)
+ create mode 100644 work/lab8/README.md
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=* [32mmaster[m[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push --set upstream orifi[K[Kgin master
+error: src refspec origin does not match any.
+[31merror: failed to push some refs to 'upstream'
+[mngarg3@g7-18:~/tmp/lab8/work/lab8$ git push --set-upstream origin master
+ngarg3@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 334 bytes | 167.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git status -s
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/Makefile
+cp: missing destination file operand after '/home/ngarg3/cs220/labs/lab8/files/Makefile'
+Try 'cp --help' for more information.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-one.c hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+make: *** No targets specified and no makefile found.  Stop.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/Makefile .
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-one.c hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john
+hello john
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ [Kngarg3@g7-18:~/tmp/lab8/work/lab8$ [Kngarg3@g7-18:~/tmp/lab8/work/lab8$ ^C
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git status -s
+[31m??[m Makefile
+[31m??[m hello
+[31m??[m hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cd filrs[K[Krs
+bash: cd: filrs: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ filrs[K[K[K[K[Kcp ~/cs220/labs/lab8/files/.gitignore .
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git status -s
+[31m??[m .gitignore
+[31m??[m Makefile
+[31m??[m hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git add . 
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git sts[Katus -s
+[32mA[m  .gitignore
+[32mA[m  Makefile
+[32mA[m  hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -m 'working with warnings'
+[master 40e4bbd] working with warnings
+ 3 files changed, 22 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -m 'working with warnings'status -s[K
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push
+ngarg3@remote.cs.binghamton.edu's password: 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)   Counting objects:  20% (2/10)   Counting objects:  30% (3/10)   Counting objects:  40% (4/10)   Counting objects:  50% (5/10)   Counting objects:  60% (6/10)   Counting objects:  70% (7/10)   Counting objects:  80% (8/10)   Counting objects:  90% (9/10)   Counting objects: 100% (10/10)   Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 666 bytes | 333.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+   e613b71..40e4bbd  master -> master
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git log
+[?1h=[33mcommit 40e4bbd8ba1f9aecc1b0cf1c534b01462d33c94e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/maste[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31mr[m[33m)[m[m
+Author: Naman Garg <ngarg3@binhgamton.edu>[m
+Date:   Thu Oct 10 12:05:32 2019 -0400[m
+[m
+    working with warnings[m
+[m
+[33mcommit e613b71fd87e1cfe834653d4550a19b174990547[m[m
+Author: Naman Garg <ngarg3@binhgamton.edu>[m
+Date:   Thu Oct 10 11:47:09 2019 -0400[m
+[m
+    added README[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello sue
+hello sue
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git status -s
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ it status -s
+bash: it: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$  M hello.c it status -s[1@g[C[C[C[C[C[C[C[C[C[C[C[C M hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ 
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -a -m 'worl[Kking [K: clean complete' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push
+ngarg3@remote.cs.binghamton.edu's password: 
+Everything up-to-date
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git log hello.c
+[?1h=[33mcommit 40e4bbd8ba1f9aecc1b0cf1c534b01462d33c94e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/maste[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31mr[m[33m)[m[m
+Author: Naman Garg <ngarg3@binhgamton.edu>[m
+Date:   Thu Oct 10 12:05:32 2019 -0400[m
+[m
+    working with warnings[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ git log -1 hello.c
+[?1h=[33mcommit 40e4bbd8ba1f9aecc1b0cf1c534b01462d33c94e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/maste[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31mr[m[33m)[m[m
+Author: Naman Garg <ngarg3@binhgamton.edu>[m
+Date:   Thu Oct 10 12:05:32 2019 -0400[m
+[m
+    working with warnings[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ .hello > dev/null
+bash: dev/null: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ .hello > dev/null[1@N[1@a[1@m[1@a[1@n[1@ 
+bash: dev/null: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ .hello Naman > dev/null[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C Naman
+bash: dev/null: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ .hello > dev/null Naman[1@/[1P
+bash: .hello: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ .hello >/dev/null Naman[K[K[K[K[K[K[C[CN >/dev/nulla >/dev/nullm >/dev/nulla >/dev/nulln >/dev/null[1@ 
+bash: .hello: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ .hello Naman >/dev/null[1@/
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git diff
+[?1h=[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ git diff
+[?1h=[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ diff --git a/hello.c b/hello.c
+diff: unrecognized option '--git'
+diff: Try 'diff --help' for more information.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ...
+bash: ...: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ -    printf("usage: %s NAME\n", argv[0]);
+bash: syntax error near unexpected token `('
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ +    fprintf(stderr, "usage: %s NAME\n", argv[0]);
+bash: syntax error near unexpected token `('
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ...
+bash: ...: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -a -m 'send usage message to stderr'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ngarg3@g7-18:~/tmp/lab8/work/lab8$  git push
+ngarg3@remote.cs.binghamton.edu's password: 
+Everything up-to-date
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git shortlog
+[?1h=Naman Garg (2):[m
+      added README[m
+      working with warnings[m
+[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ diff --git a/hello.c b/hello.c[1@g[1@i[1@t[1@ 
+fatal: ambiguous argument 'a/hello.c': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git checkout -b hello-multi
+Switched to a new branch 'hello-multi'
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=* [32mhello-multi[m[m
+  master[m[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-multi.c hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ,/hello john sue
+bash: ,/hello: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john sue
+hello john
+hello sue
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -a -m 'allow greeting multiple names'
+[hello-multi e2f7114] allow greeting multiple names
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push -u origin hello-multi 
+ngarg3@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 520 bytes | 260.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john sue
+usage: ./hello NAME
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john sue[K[K[K[K
+hello john
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ tail -3 hello.c
+  }
+  printf("hello %s\n", argv[1]);
+}
+ngarg3@g7-18:~/tmp/lab8/work/lab8$   printf("hello %s\n", argv[1]);
+bash: syntax error near unexpected token `"hello %s\n",'
+ngarg3@g7-18:~/tmp/lab8/work/lab8$   return 0;
+bash: return: can only `return' from a function or sourced script
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ }
+bash: syntax error near unexpected token `}'
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ $tail -3 hello.c
+bash: -3: command not found
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ gedit hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ gedit hello.c[3@$tail -3[C[C[C[C[C[C[C[C}[K  return 0;printf("hello %s\n", argv[1]);[17Ptail -3 hello.c[3P./hello john[K[K[K[K[K[K[K[K[K[K[K[Ktail -3 hello.c
+  printf("hello %s\n", argv[1]);
+	return 0;
+}
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ gedit hello.c
+
+(gedit:5283): Gtk-[1;33mWARNING[0m **: [34m12:24:13.129[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ gedit hello.cmake[K
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:7:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:7:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:7:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:2:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:7:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ makegedit hello.c
+
+(gedit:5393): Gtk-[1;33mWARNING[0m **: [34m12:24:43.065[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ gedit hello.cmake[K
+cc -g -Wall -std=c11    hello.c   -o hello
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello sue
+hello sue
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello sue[K[K[K[K[K[K[K[K[K[K[Kgit commit -a -m 'added return at end of main()'
+[master c304198] added return at end of main()
+ 1 file changed, 4 insertions(+)
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push
+ngarg3@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 412 bytes | 412.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+   40e4bbd..c304198  master -> master
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git checkout hello-multi
+Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git merge master
+Auto-merging work/lab8/hello.c
+CONFLICT (content): Merge conflict in work/lab8/hello.c
+Automatic merge failed; fix conflicts and then commit the result.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ gedit hello.c
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john
+hello john
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john sue
+hello john
+hello sue
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ tail -5 hello.c
+    printf("hello %s\n", argv[i]);
+  }
+
+	return 0;
+}
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ^C
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -a -m 'merged master'
+[hello-multi 99aeb45] merged master
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push
+ngarg3@remote.cs.binghamton.edu's password: 
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)   Counting objects:  15% (2/13)   Counting objects:  23% (3/13)   Counting objects:  30% (4/13)   Counting objects:  38% (5/13)   Counting objects:  46% (6/13)   Counting objects:  53% (7/13)   Counting objects:  61% (8/13)   Counting objects:  69% (9/13)   Counting objects:  76% (10/13)   Counting objects:  84% (11/13)   Counting objects:  92% (12/13)   Counting objects: 100% (13/13)   Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 407 bytes | 407.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+   e2f7114..99aeb45  hello-multi -> hello-multi
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git merge hello-multi
+Updating c304198..99aeb45
+Fast-forward
+ work/lab8/hello.c | 10 [32m+++++++[m[31m---[m
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ../hello john sue
+bash: ../hello: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./helo[Klo john sue
+hello john
+hello sue
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git branch -l 
+[?1h=  hello-multi[m[m
+* [32mmaster[m[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ git shortlog hello.c
+[?1h=Naman Garg (4):[m
+      working with warnings[m
+      allow greeting multiple names[m
+      added return at end of main()[m
+      merged master[m
+[m
+[K[?1l>ngarg3@g7-18:~/tmp/lab8/work/lab8$ git commit -a -m 'merged hello-multi'
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push
+ngarg3@remote.cs.binghamton.edu's password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+   c304198..99aeb45  master -> master
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cd ~/i220a
+bash: cd: /home/ngarg3/i220a: No such file or directory
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ cd ~/git [K-repos/i220a
+ngarg3@g7-18:~/git-repos/i220a$ git remote add lab8 \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[1PN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1PN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[Cg@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[Ca@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PN/git-repos/lab8.git[1PN/git-repos/lab8.git[1PN/git-repos/lab8.git[1PN/git-repos/lab8.git[1P/git-repos/lab8.gitn/git-repos/lab8.gitg/git-repos/lab8.gita/git-repos/lab8.gitr/git-repos/lab8.gitg/git-repos/lab8.git3/git-repos/lab8.git
+ngarg3@g7-18:~/git-repos/i220a$ git pull git pull --allow-unrelated-histories lab8 master
+fatal: 'git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ngarg3@g7-18:~/git-repos/i220a$ git pull git pull --allow-unrelated-histories lab8 master[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cremote add lab8   ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+fatal: remote lab8 already exists.
+ngarg3@g7-18:~/git-repos/i220a$ git remote add lab8   ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git[Apull git pull --allow-unrelated-histories lab8 master[K
+fatal: 'git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ngarg3@g7-18:~/git-repos/i220a$ git pull git pull --allow-unrelated-histories lab8 master[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cremote add lab8   ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+fatal: remote lab8 already exists.
+ngarg3@g7-18:~/git-repos/i220a$ git remote add lab8   ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git[Apull git pull --allow-unrelated-histories lab8 master[K
+fatal: 'git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ [Kngarg3@g7-18:~/git-repos/i220a$ git pull git pull --allow-unrelated-histories lab8 master[1P[1P[1P[1P[1P[1P[1P[1P[1P
+ngarg3@remote.cs.binghamton.edu's password: 
+warning: no common commits
+remote: Enumerating objects: 27, done.[K
+remote: Counting objects:   3% (1/27)   [Kremote: Counting objects:   7% (2/27)   [Kremote: Counting objects:  11% (3/27)   [Kremote: Counting objects:  14% (4/27)   [Kremote: Counting objects:  18% (5/27)   [Kremote: Counting objects:  22% (6/27)   [Kremote: Counting objects:  25% (7/27)   [Kremote: Counting objects:  29% (8/27)   [Kremote: Counting objects:  33% (9/27)   [Kremote: Counting objects:  37% (10/27)   [Kremote: Counting objects:  40% (11/27)   [Kremote: Counting objects:  44% (12/27)   [Kremote: Counting objects:  48% (13/27)   [Kremote: Counting objects:  51% (14/27)   [Kremote: Counting objects:  55% (15/27)   [Kremote: Counting objects:  59% (16/27)   [Kremote: Counting objects:  62% (17/27)   [Kremote: Counting objects:  66% (18/27)   [Kremote: Counting objects:  70% (19/27)   [Kremote: Counting objects:  74% (20/27)   [Kremote: Counting objects:  77% (21/27)   [Kremote: Counting objects:  81% (22/27)   [Kremote: Counting objects:  85% (23/27)   [Kremote: Counting objects:  88% (24/27)   [Kremote: Counting objects:  92% (25/27)   [Kremote: Counting objects:  96% (26/27)   [Kremote: Counting objects: 100% (27/27)   [Kremote: Counting objects: 100% (27/27), done.[K
+remote: Compressing objects:   7% (1/14)   [Kremote: Compressing objects:  14% (2/14)   [Kremote: Compressing objects:  21% (3/14)   [Kremote: Compressing objects:  28% (4/14)   [Kremote: Compressing objects:  35% (5/14)   [Kremote: Compressing objects:  42% (6/14)   [Kremote: Compressing objects:  50% (7/14)   [Kremote: Compressing objects:  57% (8/14)   [Kremote: Compressing objects:  64% (9/14)   [Kremote: Compressing objects:  71% (10/14)   [Kremote: Compressing objects:  78% (11/14)   [Kremote: Compressing objects:  85% (12/14)   [Kremote: Compressing objects:  92% (13/14)   [Kremote: Compressing objects: 100% (14/14)   [Kremote: Compressing objects: 100% (14/14), done.[K
+remote: Total 27 (delta 7), reused 0 (delta 0)[K
+Unpacking objects:   3% (1/27)   Unpacking objects:   7% (2/27)   Unpacking objects:  11% (3/27)   Unpacking objects:  14% (4/27)   Unpacking objects:  18% (5/27)   Unpacking objects:  22% (6/27)   Unpacking objects:  25% (7/27)   Unpacking objects:  29% (8/27)   Unpacking objects:  33% (9/27)   Unpacking objects:  37% (10/27)   Unpacking objects:  40% (11/27)   Unpacking objects:  44% (12/27)   Unpacking objects:  48% (13/27)   Unpacking objects:  51% (14/27)   Unpacking objects:  55% (15/27)   Unpacking objects:  59% (16/27)   Unpacking objects:  62% (17/27)   Unpacking objects:  66% (18/27)   Unpacking objects:  70% (19/27)   Unpacking objects:  74% (20/27)   Unpacking objects:  77% (21/27)   Unpacking objects:  81% (22/27)   Unpacking objects:  85% (23/27)   Unpacking objects:  88% (24/27)   Unpacking objects:  92% (25/27)   Unpacking objects:  96% (26/27)   Unpacking objects: 100% (27/27)   Unpacking objects: 100% (27/27), done.
+From ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> lab8/master
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;26r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[26;1H"~/git-repos/i220a/.git/MERGE_MSG" 7L, 310C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [m[26;127H1,1[11CAll]2;MERGE_MSG (~/git-repos/i220a/.git) - VIM]1;MERGE_MSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [m[26;127H1,1[11CAll"~/git-repos/i220a/.git/MERGE_MSG" 7L, 310C[1;1H[?25h[?25l[26;127H7,13[7;13H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [m[27;127H7,13[10CAll[7;13H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [27;1H~                                                                                                                                               [m[28;127H7,13[10CAll[7;13H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [27;1H~                                                                                                                                               [28;1H~                                                                                                                                               [m[29;127H7,13[10CAll[7;13H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [27;1H~                                                                                                                                               [28;1H~                                                                                                                                               [29;1H~                                                                                                                                               [m[30;127H7,13[10CAll[7;13H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                                                               [17;1H~                                                                                                                                               [18;1H~                                                                                                                                               [19;1H~                                                                                                                                               [20;1H~                                                                                                                                               [21;1H~                                                                                                                                               [22;1H~                                                                                                                                               [23;1H~                                                                                                                                               [24;1H~                                                                                                                                               [25;1H~                                                                                                                                               [26;1H~                                                                                                                                               [27;1H~                                                                                                                                               [28;1H~                                                                                                                                               [29;1H~                                                                                                                                               [30;1H~                                                                                                                                               [m[31;127H7,13[10CAll[7;13H[?25h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/ngarg3/git-repos/lab8
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                                                                                               [9;1H~                                                                                                                                               [10;1H~                                                                                                                                               [11;1H~                                                                                                                                               [12;1H~                                                                                                                                               [13;1H~                                                                                                                                               [14;1H~                                                                                                                                               [15;1H~                                                                                                                                               [16;1H~                                                                                                               

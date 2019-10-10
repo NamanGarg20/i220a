@@ -1,0 +1,266 @@
+Bare Repository:
+
+Input: git init --bare
+Initialized empty Git repository in /import/linux/home1/ngarg3/git-repos/lab8.git/
+
+Input:  git clone   ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+Output: Cloning into 'lab8'...
+	Warning: Permanently added the ECDSA host key for IP address '128.226.114.203' to the list of known hosts.
+	ngarg3@remote.cs.binghamton.edu's password: 
+	warning: You appear to have cloned an empty repository.	
+
+Input: git remote -v
+Output: origin	ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git (fetch)
+	origin	ssh://ngarg3@remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git (push)
+
+Input: cp ~/cs220/labs/lab8/files/README.md
+Output: cp: missing destination file operand after '/home/ngarg3/cs220/labs/lab8/files/README.md'
+	Try 'cp --help' for more information.
+
+Input: git status
+Output: On branch master
+	No commits yet
+
+	Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../
+
+	nothing added to commit but untracked files present (use "git add" to track)
+
+Input: git status --short
+Output: A  README.md
+
+Input: git commit -m 'added README'
+Output: [master (root-commit) e613b71] added README
+	 1 file changed, 4 insertions(+)
+ 	create mode 100644 work/lab8/README.md
+
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git branch -l
+	* master
+
+ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push --set-upstream origin master
+ngarg3@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 334 bytes | 167.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Hello:
+
+Input: make
+Output:	cc -g -Wall -std=c11    hello.c   -o hello
+	hello.c: In function ‘main’:
+	hello.c:5:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     	printf("usage: %s NAME\n", argv[0]);
+     	^~~~~~
+	hello.c:5:5: warning: incompatible implicit declaration of built-in function ‘printf’
+	hello.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+	hello.c:1:1:
+	+#include <stdio.h>
+ 	int
+	hello.c:5:5:
+     	printf("usage: %s NAME\n", argv[0]);
+    	 ^~~~~~
+	hello.c:6:5: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+     	exit(1);
+     	^~~~
+	hello.c:6:5: warning: incompatible implicit declaration of built-in function ‘exit’
+	hello.c:6:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+	hello.c:1:1:
+	+#include <stdlib.h>
+	 int
+	hello.c:6:5:
+	     exit(1);
+	     ^~~~
+	hello.c:8:3: warning: incompatible implicit declaration of built-in function ‘printf’
+	   printf("hello %s\n", argv[1]);
+	   ^~~~~~
+	hello.c:8:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Input:./hello john
+Output:hello john
+
+Input: git status -s
+Output: ?? Makefile
+	?? hello
+	?? hello.c
+
+Input: git status -s
+Output: ?? .gitignore
+	?? Makefile
+	?? hello.c
+
+Input:git status -s
+Output: A  .gitignore
+	A  Makefile
+	A  hello.c
+
+Input: git commit -m 'working with warnings'
+Output: [master 40e4bbd] working with warnings
+	 3 files changed, 22 insertions(+)
+	 create mode 100644 work/lab8/.gitignore
+	 create mode 100644 work/lab8/Makefile
+	 create mode 100644 work/lab8/hello.c
+
+
+Input: git log
+Output: commit 40e4bbd8ba1f9aecc1b0cf1c534b01462d33c94e (HEAD -> master, origin/master)
+	Author: Naman Garg <ngarg3@binhgamton.edu>
+	Date:   Thu Oct 10 12:05:32 2019 -0400
+
+	    working with warnings
+
+	commit e613b71fd87e1cfe834653d4550a19b174990547
+	Author: Naman Garg <ngarg3@binhgamton.edu>
+	Date:   Thu Oct 10 11:47:09 2019 -0400
+
+	    added README
+
+Input:./hello sue
+Output: hello sue
+
+Input: git log hello.c
+Output: commit 40e4bbd8ba1f9aecc1b0cf1c534b01462d33c94e (HEAD -> master, origin/master)
+	Author: Naman Garg <ngarg3@binhgamton.edu>
+	Date:   Thu Oct 10 12:05:32 2019 -0400
+
+	    working with warnings
+
+Input: git log -1 hello.c
+Output: commit 40e4bbd8ba1f9aecc1b0cf1c534b01462d33c94e (HEAD -> master, origin/master)
+	Author: Naman Garg <ngarg3@binhgamton.edu>
+	Date:   Thu Oct 10 12:05:32 2019 -0400
+
+	    working with warnings
+
+Input: git shortlog
+Output: Naman Garg (2):
+      	added README
+
+Feature Branch:
+Input: git checkout -b hello-multi
+Output: Switched to a new branch 'hello-multi'
+
+Input: git branch -l
+Output: * hello-multi
+  	 master
+
+Input: ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john sue
+Output: hello john
+	hello sue
+
+Input: git commit -a -m 'allow greeting multiple names'
+Output: [hello-multi e2f7114] allow greeting multiple names
+	 1 file changed, 8 insertions(+), 3 deletions(-)
+	ngarg3@g7-18:~/tmp/lab8/work/lab8$ git push -u origin hello-multi 
+	ngarg3@remote.cs.binghamton.edu's password: 
+	Enumerating objects: 9, done.
+	Counting objects: 100% (9/9), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (5/5), 520 bytes | 260.00 KiB/s, done.
+	Total 5 (delta 1), reused 0 (delta 0)
+	To ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8.git
+	 * [new branch]      hello-multi -> hello-multi
+	Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+
+	Development on master:
+
+Input: git checkout master
+Output: Switched to branch 'master'
+	Your branch is up to date with 'origin/master'.
+
+Input: ngarg3@g7-18:~/tmp/lab8/work/lab8$ ./hello john
+Output: hello john
+
+      working with warnings
+
+Input:./hello sue
+Output: hello sue
+
+
+Input: git commit -a -m 'added return at end of main()'
+Output: [master c304198] added return at end of main()
+	 1 file changed, 4 insertions(+)
+
+	Merging Master Changes to Feature Branch:
+
+Input: git checkout hello-multi
+Output: Switched to branch 'hello-multi'
+	Your branch is up to date with 'origin/hello-multi'.
+
+Input: git merge master
+Output: Auto-merging work/lab8/hello.c
+	CONFLICT (content): Merge conflict in work/lab8/hello.c
+	Automatic merge failed; fix conflicts and then commit the result.
+
+Input: ./hello john sue
+Output: hello john
+	hello sue
+
+Input: tail -5 hello.c
+Output:   printf("hello %s\n", argv[i]);
+	  }
+
+		return 0;
+	}
+
+Input: git commit -a -m 'merged master'
+Output: [hello-multi 99aeb45] merged master
+
+Merge Feature Branch into Master:
+
+Input: git checkout master
+Output: Switched to branch 'master'
+	Your branch is up to date with 'origin/master'.
+
+Input: git merge hello-multi
+Output: Updating c304198..99aeb45
+	Fast-forward
+	 work/lab8/hello.c | 10 +++++++---
+	 1 file changed, 7 insertions(+), 3 deletions(-)
+
+Input: ./hello john sue
+Output: hello john
+	hello sue
+
+Input: git branch -l 
+Output:  hello-multi
+	* master
+
+Input: git shortlog hello.c
+OutPut:Naman Garg (4):
+	      working with warnings
+	      allow greeting multiple names
+	      added return at end of main()
+	      merged master
+
+Input: git pull --allow-unrelated-histories lab8 master
+Output: ngarg3@remote.cs.binghamton.edu's password: 
+	warning: no common commits
+	remote: Enumerating objects: 27, done.
+	remote: Counting objects: 100% (27/27), done.
+	remote: Compressing objects: 100% (14/14), done.
+	remote: Total 27 (delta 7), reused 0 (delta 0)
+	Unpacking objects: 100% (27/27), done.
+	From ssh://remote.cs.binghamton.edu/home/ngarg3/git-repos/lab8
+	 * branch            master     -> FETCH_HEAD
+	 * [new branch]      master     -> lab8/master
+	hint: Waiting for your editor to close the file... 
+	[1]+  Stopped                 git pull --allow-unrelated-histories lab8 master
+	ngarg3@g7-18:~/git-repos/i220a$ cd work/lab8
+	ngarg3@g7-18:~/git-repos/i220a/work/lab8$ ls
+	hello.c  Makefile  README.md
+
+
+	i220X Repository
+
+
+
+
+
+
+
