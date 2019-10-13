@@ -1,19 +1,22 @@
 #include "big-bits.h"
 #include "hex-util.h"
+#include "errors.h"
 
 #include <assert.h>
 #include <errno.h>
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <stdio.h>
+#include <ctype.h>
 /** Provide concrete definition for struct BigBits to flesh out
  *  abstract BigBits data type.
  */
 struct BigBits {
   //@TODO
   char * bits;
-  int hexValue;
+
+
   
 };
 
@@ -32,19 +35,13 @@ newBigBits(const char *hex)
   assert(CHAR_BIT == 8);
   //@TODO
   int count=0;
-  int mask = sizeof(hex)*4;
-  const BigBits * newBit = malloc(sizeof(struct BigBits)+1);
-  
-  char * s = malloc(strlen(hex)+1);
-  int curHex = charToHexet(s);
-  while()
+  BigBits * newBit = malloc(sizeof(struct BigBits));
+  char * s = (char *)malloc(strlen(hex)+1);
   if(newBit==NULL || s==NULL){
-    newBit->next=NULL;
-    fprintf(stderr, "malloc failure: %s\n", strerror(errno));
-    exit(1);
+  	error(strerror(errno));
   }
-  newBit->hexValue=charToHexet(s);
-  newBit->bits = s;
+  	strcpy(s,(char *)hex);
+	newBit->bits= s;
 
   return newBit;
 }
@@ -71,24 +68,37 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
-  const BigBits * newBit = malloc(sizeof(struct BigBits)+1);
-  char * s = malloc(strlen(newBit->bits)+1);
-  int d = 0 ;
-  int val = charToHexet(s);
-    for( d = 0; (val & (1<<d)) == 0 && d < 15; )
-    {
-        d++ ;
-    }   
+  int outBits = 0;
+  char *newBit;
+  
+  if(strlen(bigBits->bits)>1){
+  for(int i = 0;i< strlen(bigBits->bits); i++){
+        if(bigBits->bits[i]=='0'){
+        outBits++;
+    }
+  }
+  	newBit = (char*)malloc(strlen(bigBits->bits)+1-outBits);
+  for(int i = 0; i<strlen(bigBits->bits)-outBits; i++){
+  newBit[i] = hexetToChar(charToHexet(bigBits->bits[i+outBits]));
+  }
+  newBit[strlen(bigBits->bits)-outBits]='\0';
 
-    // Significant digits
-    for( int i = 0 ; d < 16; s++; d++ )
-    {
-        s[i] =hexetToChar(val);
-    }    
-
-    return s;
-
+}else {
+	newBit =(char*) malloc(strlen(bigBits->bits));
+	for(int i = 0; i<strlen(bigBits->bits); i++){
+  newBit[i] = hexetToChar(charToHexet(bigBits->bits[i]));
+  }
+	
 }
+for(int i=0;i<strlen(newBit);i++){
+  	if(charToHexet(newBit[i])>16 || charToHexet(newBit[i])<0){
+  		newBit[i]='\0';
+  	}
+  }
+  	
+  return newBit;
+}
+  	
 
 
 /** Return a new BigBits which is the bitwise-& of bigBits1 and bigBits2.
@@ -98,14 +108,39 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  if(bigBits1!=NULL && bigBits2!=NULL ){
-  const BigBits * p ;
-  int hexV1 = chartoHexet(BigBits1->bits) & chartoHexet(BigBits1->bits);
-  char * s1 = hexetToChar(hexV1);
-  p = newBigBits(s1);
+ 	char * newBits;
+  int size1 = strlen(bigBits1->bits);
+  int size2 = strlen(bigBits2->bits);
 
-  }
-  return NULL;
+  printf("size1 %d \t",size1);
+	  printf("size2 %d \t", size2);
+ 		
+  	int i=0;
+  	int newAndBit=0;;
+   if(size1 <= size2){
+    newBits = malloc(size1);
+    for(int i=0;i<size1;i++){
+ 		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) & charToHexet((bigBits2->bits[size2-i-1]));
+ 		if(newAndBit>=0){
+ 			newBits[size1 -i -1] =(hexetToChar(newAndBit));  
+ 			}  
+    }
+  } else {
+    newBits = malloc(size2);
+    for(int i=0;i<size2;i++){
+    	
+ 		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) & charToHexet((bigBits2->bits[size2 -i-1]));
+     
+ 			if(newAndBit>=0){
+ 			newBits[size2 -i -1] =(hexetToChar(newAndBit));
+ 		}
+ 	}
+    }
+    
+  
+
+  return  newBigBits(newBits);
+  
 }
 
 /** Return a new BigBits which is the bitwise-| of bigBits1 and bigBits2.
@@ -115,11 +150,58 @@ const BigBits *
 orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  if(bigBits1!=NULL && bigBits2!=NULL ){
-    return bigBits1 | bigBits2;
-  }
-  return NULL;
+  char * newBits;
+  int size1 = strlen(bigBits1->bits);
+  int size2 = strlen(bigBits2->bits);
+
+  printf("size1 %d \t",size1);
+	  printf("size2 %d \t", size2);
+
+	  char x1 = (bigBits1->bits[0]);
+	 		char y1 = (bigBits2->bits[0]);
+	 		printf("x1 %c \t",x1);
+	 		printf("y1 %c \t", y1);
+
+	 		int x = charToHexet(x1);
+	 		int y = charToHexet(y1);
+	 		int str2 =x | y;
+	    	printf( "str2 %d\n",str2);
+	 		printf("x %d \t",x);
+	 		printf("y %d \t", y);
+	 	// 	int str1 = charToHexet((bigBits1->bits[size1-1 ])) | charToHexet((bigBits2->bits[size2-1]));
+	 	// printf( "or end int %d\n",charToHexet((bigBits1->bits[size1-1 ])) ); 
+	 	// printf( "or end char %d\t",charToHexet((bigBits2->bits[size2 -1])) );	
+   //  	printf( "or str1 int %d\n",str1 ); printf( "or str1 char %c\t",hexetToChar(str1) );
+
+ 		
+  	int i=0;
+  	int newAndBit=0;;
+   if(size1 <= size2){
+    newBits = malloc(size2);
+    for(int i=0;i<size1;i++){
+ 		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) | charToHexet((bigBits2->bits[size2-i-1]));
+ 		if(newAndBit>=0){
+ 			newBits[size1 -i -1] =(hexetToChar(newAndBit));
+ 		}
+      
+      
+    }
+  } else {
+    newBits = malloc(size2);
+    for(int i=0;i<size2;i++){
+    	
+ 		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) | charToHexet((bigBits2->bits[size2 -i-1]));
+ 		if(newAndBit>=0){
+ 			newBits[size2 -i -1] =(hexetToChar(newAndBit));
+ 		}
+    }
+    }
+  
+
+  return  newBigBits((const char *)newBits);
+  
 }
+
 
 /** Return a new BigBits which is the bitwise-^ of bigBits1 and bigBits2.
  *  Returns NULL on error with errno set "appropriately".
@@ -128,8 +210,35 @@ const BigBits *
 xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  if(bigBits1!=NULL && bigBits2!=NULL ){
-    return bigBits1 ^ bigBits2;
+  char * newBits;
+  int size1 = strlen(bigBits1->bits);
+  int size2 = strlen(bigBits2->bits);
+
+ 		
+  	int i=0;
+  	int newAndBit=0;;
+   if(size1 <= size2){
+    newBits = malloc(size2);
+    for(int i=0;i<size1;i++){
+ 		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) ^ charToHexet((bigBits2->bits[size2-i-1]));
+ 		if(newAndBit>=0){
+ 			newBits[size1 -i -1] =(hexetToChar(newAndBit));
+ 		}
+      
+      
+    }
+  } else {
+    newBits = malloc(size2);
+    for(int i=0;i<size2;i++){
+    	
+ 		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) ^ charToHexet((bigBits2->bits[size2 -i-1]));
+ 		if(newAndBit>=0){
+ 			newBits[size2 -i -1] =(hexetToChar(newAndBit));
+ 		}
+    }
+    
   }
-  return NULL;
+
+  return  newBigBits(newBits);
+  
 }
