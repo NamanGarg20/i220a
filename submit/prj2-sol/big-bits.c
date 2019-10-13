@@ -119,7 +119,7 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   int size2 = strlen(bigBits2->bits); 		
   	int i=0;
   	int newAndBit=0;;
-   if(size1 >= size2){
+   if(size1 <= size2){
     newBits = malloc(size1);
     for(int i=0;i<size1;i++){
  		newAndBit = charToHexet((bigBits1->bits[size1-i-1])) & charToHexet((bigBits2->bits[size2-i-1]));
