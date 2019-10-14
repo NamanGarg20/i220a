@@ -72,7 +72,7 @@ stringBigBits(const BigBits *bigBits)
   int outBits = 0;// prececiding zero bits
   char *newBit;
   
-  if(strlen(bigBits->bits)>1){
+  if(strlen(bigBits->bits)>1 && bigBits->bits[0]=='0'){
   for(int i = 0;i< strlen(bigBits->bits); i++){
         if(bigBits->bits[i]=='0'){
         outBits++;
@@ -82,8 +82,12 @@ stringBigBits(const BigBits *bigBits)
   for(int i = 0; i<strlen(bigBits->bits)-outBits; i++){
   newBit[i] = tolower(bigBits->bits[i+outBits]);
   }
-  newBit[strlen(bigBits->bits)-outBits]='\0';
-
+  if(bigBits->bits[1]=='0' && bigBits->bits[0]=='0'){
+  newBit[strlen(bigBits->bits)-outBits]='0';
+  }
+  if(bigBits->bits[strlen(bigBits->bits)-1]!='0'){
+    newBit[strlen(bigBits->bits)-outBits]='\0';
+  }
 }else {
 	newBit =(char*) malloc(strlen(bigBits->bits));
 	for(int i = 0; i<strlen(bigBits->bits); i++){
@@ -92,7 +96,7 @@ stringBigBits(const BigBits *bigBits)
 	
 }
 for(int i=0;i<strlen(newBit);i++){
-  	if(charToHexet(newBit[i])>16 || charToHexet(newBit[i])<0){
+  	if(charToHexet(newBit[i])>=16 || charToHexet(newBit[i])<0){
   		newBit[i]='\0';
   	}
   }
