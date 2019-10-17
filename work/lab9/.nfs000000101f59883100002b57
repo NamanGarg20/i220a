@@ -1,0 +1,757 @@
+Script started on 2019-10-17 11:43:42-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9$ mak[K[K[Kcd files
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make
+cc -g -Wall  -std=c11    hello.c   -o hello
+cc -g -Wall  -std=c11 -S hello.c
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./hello 0
+bash: ./hello0: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./hello0[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ko
+usage: ./hello NAME...
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./hello N[KNaman
+bash: ./helloNaman: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./helloNaman^?[K[K[K[K[K[K Namamn
+hello Namamn
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ^C
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ size hello
+   text	   data	    bss	    dec	    hex	filename
+   1874	    592	     48	   2514	    9d2	hello
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ^C
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ size -A  hello
+hello  :
+section              size    addr
+.interp                28     680
+.note.ABI-tag          32     708
+.note.gnu.build-id     36     740
+.gnu.hash              48     776
+.dynsym               240     824
+.dynstr               152    1064
+.gnu.version           20    1216
+.gnu.version_r         32    1240
+.rela.dyn             240    1272
+.rela.plt              48    1512
+.init                  23    4096
+.plt                   48    4128
+.plt.got                8    4176
+.text                 513    4192
+.fini                   9    4708
+.rodata                33    8192
+.eh_frame_hdr          68    8228
+.eh_frame             296    8296
+.init_array             8   15848
+.fini_array             8   15856
+.dynamic              480   15864
+.got                   40   16344
+.got.plt               40   16384
+.data                  16   16424
+.bss                   48   16448
+.comment               28       0
+.debug_aranges         48       0
+.debug_info           860       0
+.debug_abbrev         287       0
+.debug_line           308       0
+.debug_str            614       0
+Total                4659
+
+
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ obj dump -d  hello > hello.objdump
+bash: obj: command not found
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ obj dump -d hello > hello.objdump[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdump -d he[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdump
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:
+0000000000001174 <main>:
+    1174:	55                   	push   %rbp
+    1175:	48 89 e5             	mov    %rsp,%rbp
+    1178:	48 83 ec 20          	sub    $0x20,%rsp
+    117c:	89 7d ec             	mov    %edi,-0x14(%rbp)
+    117f:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    1183:	83 7d ec 01          	cmpl   $0x1,-0x14(%rbp)
+    1187:	75 2c                	jne    11b5 <main+0x41>
+    1189:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    118d:	48 8b 10             	mov    (%rax),%rdx
+    1190:	48 8b 05 c9 2e 00 00 	mov    0x2ec9(%rip),%rax        # 4060 <stderr@@GLIBC_2.2.5>
+    1197:	48 8d 35 70 0e 00 00 	lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>
+    119e:	48 89 c7             	mov    %rax,%rdi
+    11a1:	b8 00 00 00 00       	mov    $0x0,%eax
+    11a6:	e8 85 fe ff ff       	callq  1030 <fprintf@plt>
+    11ab:	bf ef be ad de       	mov    $0xdeadbeef,%edi
+    11b0:	e8 8b fe ff ff       	callq  1040 <exit@plt>
+    11b5:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%rbp)
+    11bc:	eb 2d                	jmp    11eb <main+0x77>
+    11be:	8b 45 fc             	mov    -0x4(%rbp),%eax
+    11c1:	48 98                	cltq   
+    11c3:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    11ca:	00 
+    11cb:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    11cf:	48 01 d0             	add    %rdx,%rax
+    11d2:	48 8b 10             	mov    (%rax),%rdx
+    11d5:	48 8b 05 64 2e 00 00 	mov    0x2e64(%rip),%rax        # 4040 <stdout@@GLIBC_2.2.5>
+    11dc:	48 89 d6             	mov    %rdx,%rsi
+    11df:	48 89 c7             	mov    %rax,%rdi
+    11e2:	e8 5e ff ff ff       	callq  1145 <hello>
+    11e7:	83 45 fc 01          	addl   $0x1,-0x4(%rbp)
+    11eb:	8b 45 fc             	mov    -0x4(%rbp),%eax
+    11ee:	3b 45 ec             	cmp    -0x14(%rbp),%eax
+    11f1:	7c cb                	jl     11be <main+0x4a>
+    11f3:	b8 00 00 00 00       	mov    $0x0,%eax
+    11f8:	c9                   	leaveq 
+    11f9:	c3                   	retq   
+    11fa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001200 <__libc_csu_init>:
+    1200:	41 57                	push   %r15
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ls -l hello
+-rwxr-xr-x 1 ngarg3 ngarg3 19400 Oct 17 11:45 hello
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ strip hello
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ls
+hello  hello.c	hello.objdump  hello.s	Makefile  mystery.o
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make ck==[K[K[K[K[K[K[K[K[Kls -l hello
+-rwxr-xr-x 1 ngarg3 ngarg3 14416 Oct 17 11:51 hello
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make clean
+rm -f hello hello.s *.objdump *~
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make cleanls -l hello
+ls: cannot access 'hello': No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ls -l hello[1Pmake cleanls -l hello[Kstrip hello
+strip: 'hello': No such file
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdump
+objdump: 'hello': No such file
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make 
+cc -g -Wall  -std=c11    hello.c   -o hello
+cc -g -Wall  -std=c11 -S hello.c
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make objdump -d -s -x hello > hello.objdump
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdump[1P[1P[1P[1P[1P[1@m[1@y[1@s[1@t[1@e[1@r[1@y[C[C[C[1Pello.objdump[1Pllo.objdump[C[1Po.objdump[1Po.objdump[1P.objdumpm.objdumpy.objdumps.objdumpt.objdumpe.objdumpr.objdumpy.objdump
+objdump: 'mystery': No such file
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x mystery > mystery.objdump[C[C[C[C[C[4Phello > hello.objdump[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pmake 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cobjdump -d -s -x hello > hello.objdumpobjdump -d hello | grep  -A40 main.:
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdumpobjdump -d hello | grep  -A40 main.:
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdumpobjdump -d hello | grep  -A40 main.:[A[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cobjdump -d hello | grep  -A40 main.:[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[C[C[C[C[C[C[C[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[C[C[C[C[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[C[C[C[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[C[C[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[C[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[K[Angarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d hello | grep  -A40 main.:[38@-s -x hello > hello.objdumpobjdump -d [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ [Kngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdumpobjdump -d hello | grep  -A40 main.:[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Pmystery > mystery.objdump[4Phello > hello.objdump[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kobjdump -d hello | grep  -A40 main.:[1P[1P[1P[1P[1P[1@m[1@y[1@s[1@t[1@e[1@r[1@u[1P[1@y
+objdump: 'mystery': No such file
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d mystery | grep  -A40 main.:
+objdump: 'mystery': No such file
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d mystery | grep  -A40 main.:[36@-s -x hello > hello.objdumpobjdump -d hello[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Pmystery > mystery.objdump[4Phello > hello.objdumpmake [K./mystert[Ky
+cc   mystery.o   -o mystery
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: mystery] Error 1
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./mystery
+bash: ./mystery: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make
+make: Nothing to be done for 'all'.
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./mystery
+bash: ./mystery: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x hello > hello.objdumpmyst[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmystery > mystery.objdump
+objdump: 'mystery': No such file
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ objdump -d -s -x mystery > mystery.objdump[1@.[1@o
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) g[Khello
+Undefined command: "hello".  Try "help".
+(gdb) ./hello
+Undefined command: "".  Try "help".
+(gdb) 
+[1]+  Stopped                 gdb hello
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ gdb helloobjdump -d -s -x mystery.o > mystery.objdump[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake hello
+Usage: objdump <option(s)> <file(s)>
+ Display information from object <file(s)>.
+ At least one of the following switches must be given:
+  -a, --archive-headers    Display archive header information
+  -f, --file-headers       Display the contents of the overall file header
+  -p, --private-headers    Display object format specific file header contents
+  -P, --private=OPT,OPT... Display object format specific contents
+  -h, --[section-]headers  Display the contents of the section headers
+  -x, --all-headers        Display the contents of all headers
+  -d, --disassemble        Display assembler contents of executable sections
+  -D, --disassemble-all    Display assembler contents of all sections
+  -S, --source             Intermix source code with disassembly
+  -s, --full-contents      Display the full contents of all sections requested
+  -g, --debugging          Display debug information in object file
+  -e, --debugging-tags     Display debug information using ctags style
+  -G, --stabs              Display (in raw form) any STABS info in the file
+  -W[lLiaprmfFsoRtUuTgAckK] or
+  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,=frames,
+          =frames-interp,=str,=loc,=Ranges,=pubtypes,
+          =gdb_index,=trace_info,=trace_abbrev,=trace_aranges,
+          =addr,=cu_index,=links,=follow-links]
+                           Display DWARF info in the file
+  -t, --syms               Display the contents of the symbol table(s)
+  -T, --dynamic-syms       Display the contents of the dynamic symbol table
+  -r, --reloc              Display the relocation entries in the file
+  -R, --dynamic-reloc      Display the dynamic relocation entries in the file
+  @<file>                  Read options from <file>
+  -v, --version            Display this program's version number
+  -i, --info               List object formats and architectures supported
+  -H, --help               Display this information
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make he[K[K
+make: Nothing to be done for 'all'.
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ ./hello Na
+hello Na
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ gbd [K[K[Kdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) b main
+Breakpoint 1 at 0x1183: file hello.c, line 16.
+(gdb) r
+Starting program: /import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files/hello 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe778) at hello.c:16
+16	  if (argc == 1) {
+(gdb) disas /m 
+Dump of assembler code for function main:
+15	{
+   0x0000555555555174 <+0>:	push   %rbp
+   0x0000555555555175 <+1>:	mov    %rsp,%rbp
+   0x0000555555555178 <+4>:	sub    $0x20,%rsp
+   0x000055555555517c <+8>:	mov    %edi,-0x14(%rbp)
+   0x000055555555517f <+11>:	mov    %rsi,-0x20(%rbp)
+
+16	  if (argc == 1) {
+=> 0x0000555555555183 <+15>:	cmpl   $0x1,-0x14(%rbp)
+   0x0000555555555187 <+19>:	jne    0x5555555551b5 <main+65>
+
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+   0x0000555555555189 <+21>:	mov    -0x20(%rbp),%rax
+   0x000055555555518d <+25>:	mov    (%rax),%rdx
+   0x0000555555555190 <+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+   0x0000555555555197 <+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+   0x000055555555519e <+42>:	mov    %rax,%rdi
+   0x00005555555551a1 <+45>:	mov    $0x0,%eax
+   0x00005555555551a6 <+50>:	callq  0x555555555030 <fprintf@plt>
+
+18	    exit(0xdeadbeef);
+   0x00005555555551ab <+55>:	mov    $0xdeadbeef,%edi
+   0x00005555555551b0 <+60>:	callq  0x555555555040 <exit@plt>
+
+19	  }
+20	  for (int i = 1; i < argc; i++) {
+   0x00005555555551b5 <+65>:	movl   $0x1,-0x4(%rbp)
+   0x00005555555551bc <+72>:	jmp    0x5555555551eb <main+119>
+   0x00005555555551e7 <+115>:	addl   $0x1,-0x4(%rbp)
+   0x00005555555551eb <+119>:	mov    -0x4(%rbp),%eax
+   0x00005555555551ee <+122>:	cmp    -0x14(%rbp),%eax
+   0x00005555555551f1 <+125>:	jl     0x5555555551be <main+74>
+
+21	    hello(stdout, argv[i]);
+   0x00005555555551be <+74>:	mov    -0x4(%rbp),%eax
+   0x00005555555551c1 <+77>:	cltq   
+   0x00005555555551c3 <+79>:	lea    0x0(,%rax,8),%rdx
+   0x00005555555551cb <+87>:	mov    -0x20(%rbp),%rax
+   0x00005555555551cf <+91>:	add    %rdx,%rax
+   0x00005555555551d2 <+94>:	mov    (%rax),%rdx
+   0x00005555555551d5 <+97>:	mov    0x2e64(%rip),%rax        # 0x555555558040 <stdout@@GLIBC_2.2.5>
+   0x00005555555551dc <+104>:	mov    %rdx,%rsi
+   0x00005555555551df <+107>:	mov    %rax,%rdi
+   0x00005555555551e2 <+110>:	callq  0x555555555145 <hello>
+
+22	  }
+23	  return 0;
+--Type <RET> for more, q to quit, c to continue without paging--c
+   0x00005555555551f3 <+127>:	mov    $0x0,%eax
+
+24	}
+   0x00005555555551f8 <+132>:	leaveq 
+   0x00005555555551f9 <+133>:	retq   
+
+End of assembler dump.
+(gdb) i reg
+rax            0x555555555174      93824992235892
+rbx            0x0                 0
+rcx            0x7ffff7f91718      140737353684760
+rdx            0x7fffffffe788      140737488349064
+rsi            0x7fffffffe778      140737488349048
+rdi            0x1                 1
+rbp            0x7fffffffe690      0x7fffffffe690
+rsp            0x7fffffffe670      0x7fffffffe670
+r8             0x7ffff7f92d80      140737353690496
+r9             0x7ffff7f92d80      140737353690496
+r10            0x7                 7
+r11            0x2                 2
+r12            0x555555555060      93824992235616
+r13            0x7fffffffe770      140737488349040
+r14            0x0                 0
+r15            0x0                 0
+rip            0x555555555183      0x555555555183 <main+15>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) [K(gdb) p argc
+$1 = 1
+(gdb) p *($rbp - 20)
+Attempt to dereference a generic pointer.
+(gdb) p *($rbp - 20)[C[1@([1@i[1@n[1@t[1@ [1@*[1@)
+$2 = 1
+(gdb) p argv
+$3 = (const char **) 0x7fffffffe778
+(gdb) p *(const char ***)($rbp - 32)
+$4 = (const char **) 0x7fffffffe778
+(gdb) p argv[0]
+$5 = 0x7fffffffea5b "/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files/hello"
+(gdb) p (*(p (*(const char ***)($rbp - 0x20))[0]
+No symbol "p" in current context.
+(gdb) p (*(p (*(const char ***)($rbp - 0x20))[0][1P[1P[1P[1P[1P
+$6 = 0x7fffffffea5b "/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files/hello"
+(gdb) display /i *$pc
+1: x/i *$pc
+=> 0x555555555183 <main+15>:	cmpl   $0x1,-0x14(%rbp)
+(gdb) p $eflags
+$7 = [ IF ]
+(gdb) ni
+0x0000555555555187	16	  if (argc == 1) {
+1: x/i *$pc
+=> 0x555555555187 <main+19>:	jne    0x5555555551b5 <main+65>
+(gdb) jne
+Undefined command: "jne".  Try "help".
+(gdb) jne[1Pni
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x555555555189 <main+21>:	mov    -0x20(%rbp),%rax
+(gdb) nijne[1Pnip $eflags
+$8 = [ PF ZF IF ]
+(gdb) p (char *)0xnnnnn
+Invalid number "0xnnnnn".
+(gdb) ni
+0x000055555555518d	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x55555555518d <main+25>:	mov    (%rax),%rdx
+(gdb) nip (char *)0xnnnnn[K[K[K[K[K[K0x55555555518d[1Px55555555518d
+$9 = 0x55555555518d <main+25> "H\213\020H\213\005\311."
+(gdb) ni
+0x0000555555555190	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x555555555190 <main+28>:	
+    mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+(gdb) ni
+0x0000555555555197	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x555555555197 <main+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+(gdb) ni
+0x000055555555519e	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x55555555519e <main+42>:	mov    %rax,%rdi
+(gdb) ni
+0x00005555555551a1	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x5555555551a1 <main+45>:	mov    $0x0,%eax
+(gdb) p (char *)0x55555555519e
+$10 = 0x55555555519e <main+42> "H\211Ǹ"
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 18574] will be killed.
+
+Quit anyway? (y or n) y
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) b hw[Kello
+Breakpoint 1 at 0x1155: file hello.c, line 8.
+(gdb) r jow[Ke
+Starting program: /import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files/hello joe
+
+Breakpoint 1, hello (out=0x7ffff7f92760 <_IO_2_1_stdout_>, who=0x7fffffffea99 "joe")
+    at hello.c:8
+8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x0000555555555159	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x000055555555515d	8	  fprintf(out, "hello %s\n", who);
+(gdb) p (char *) 0x0000555555555159
+$1 = 0x555555555159 <hello+20> "H\213E\370H\215\065\240\016"
+(gdb) p who
+$2 = 0x7fffffffea99 "joe"
+(gdb) p who(char *) 0x0000555555555159[C[1P159[C[1P159[C[1P159[C[1P159[C[1P159[C[1P159[C[1P159[1P55159[1P55159[1P55159[1P55159[C[1P159
+$3 = 0x5159 <error: Cannot access memory at address 0x5159>
+(gdb) p (char *) 0x5159[C[C[C[C[C[C[C[Cwho[K(char *) 0x0000555555555159[C[C[C[1P555555555159[C[C[1P555555555159[C[1P555555555159[1P555555555159[C[C[C[C[C[C[C[C[1P159[C[C[C[C[C[C[C[1P159[C[C[C[C[C[C[1P159[C[C[C[C[C[1P159
+$4 = 0x55555159 <error: Cannot access memory at address 0x55555159>
+(gdb) p (char *) 0x55555159[4P159[C[C[C[C[C[C[C[Cwho[K(char *) 0x0000555555555159[Kd
+$5 = 0x55555555515d <hello+24> "H\215\065\240\016"
+(gdb) p (char *) 0x000055555555515d[K9
+$6 = 0x555555555159 <hello+20> "H\213E\370H\215\065\240\016"
+(gdb) p char[K[K[K[K(char *) 0x7fffffffea99
+$7 = 0x7fffffffea99 "joe"
+(gdb) ni
+0x0000555555555164	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x0000555555555167	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x000055555555516c	8	  fprintf(out, "hello %s\n", who);
+(gdb) 
+hello joe
+9	}
+(gdb) 
+0x0000555555555172	9	}
+(gdb) 
+0x0000555555555173	9	}
+(gdb) 
+main (argc=2, argv=0x7fffffffe778) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) 
+0x00005555555551eb	20	  for (int i = 1; i < argc; i++) {
+(gdb) 
+0x00005555555551ee	20	  for (int i = 1; i < argc; i++) {
+(gdb) 
+0x00005555555551f1	20	  for (int i = 1; i < argc; i++) {
+(gdb) 
+23	  return 0;
+(gdb) 
+24	}
+(gdb) 
+0x00005555555551f9	24	}
+(gdb) 
+__libc_start_main (main=0x555555555174 <main>, argc=2, argv=0x7fffffffe778, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7fffffffe768) at ../csu/libc-start.c:342
+342	../csu/libc-start.c: No such file or directory.
+(gdb) 
+0x00007ffff7dfa09d	342	in ../csu/libc-start.c
+(gdb) 
+[Inferior 1 (process 20473) exited normally]
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) q
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) stat[Krt jow[Ke
+Temporary breakpoint 1 at 0x1183: file hello.c, line 16.
+Starting program: /import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files/hello joe
+
+Temporary breakpoint 1, main (argc=2, argv=0x7fffffffe778) at hello.c:16
+16	  if (argc == 1) {
+(gdb) dias[K[Ksass /m
+Dump of assembler code for function main:
+15	{
+   0x0000555555555174 <+0>:	push   %rbp
+   0x0000555555555175 <+1>:	mov    %rsp,%rbp
+   0x0000555555555178 <+4>:	sub    $0x20,%rsp
+   0x000055555555517c <+8>:	mov    %edi,-0x14(%rbp)
+   0x000055555555517f <+11>:	mov    %rsi,-0x20(%rbp)
+
+16	  if (argc == 1) {
+=> 0x0000555555555183 <+15>:	cmpl   $0x1,-0x14(%rbp)
+   0x0000555555555187 <+19>:	jne    0x5555555551b5 <main+65>
+
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+   0x0000555555555189 <+21>:	mov    -0x20(%rbp),%rax
+   0x000055555555518d <+25>:	mov    (%rax),%rdx
+   0x0000555555555190 <+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+   0x0000555555555197 <+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+   0x000055555555519e <+42>:	mov    %rax,%rdi
+   0x00005555555551a1 <+45>:	mov    $0x0,%eax
+   0x00005555555551a6 <+50>:	callq  0x555555555030 <fprintf@plt>
+
+18	    exit(0xdeadbeef);
+   0x00005555555551ab <+55>:	mov    $0xdeadbeef,%edi
+   0x00005555555551b0 <+60>:	callq  0x555555555040 <exit@plt>
+
+19	  }
+--Type <RET> for more, q to quit, c to continue without paging--b [K[Kc
+20	  for (int i = 1; i < argc; i++) {
+   0x00005555555551b5 <+65>:	movl   $0x1,-0x4(%rbp)
+   0x00005555555551bc <+72>:	jmp    0x5555555551eb <main+119>
+   0x00005555555551e7 <+115>:	addl   $0x1,-0x4(%rbp)
+   0x00005555555551eb <+119>:	mov    -0x4(%rbp),%eax
+   0x00005555555551ee <+122>:	cmp    -0x14(%rbp),%eax
+   0x00005555555551f1 <+125>:	jl     0x5555555551be <main+74>
+
+21	    hello(stdout, argv[i]);
+   0x00005555555551be <+74>:	mov    -0x4(%rbp),%eax
+   0x00005555555551c1 <+77>:	cltq   
+   0x00005555555551c3 <+79>:	lea    0x0(,%rax,8),%rdx
+   0x00005555555551cb <+87>:	mov    -0x20(%rbp),%rax
+   0x00005555555551cf <+91>:	add    %rdx,%rax
+   0x00005555555551d2 <+94>:	mov    (%rax),%rdx
+   0x00005555555551d5 <+97>:	mov    0x2e64(%rip),%rax        # 0x555555558040 <stdout@@GLIBC_2.2.5>
+   0x00005555555551dc <+104>:	mov    %rdx,%rsi
+   0x00005555555551df <+107>:	mov    %rax,%rdi
+   0x00005555555551e2 <+110>:	callq  0x555555555145 <hello>
+
+22	  }
+23	  return 0;
+   0x00005555555551f3 <+127>:	mov    $0x0,%eax
+
+24	}
+   0x00005555555551f8 <+132>:	leaveq 
+   0x00005555555551f9 <+133>:	retq   
+
+End of assembler dump.
+(gdb) b *0x5555555551b5
+Breakpoint 2 at 0x5555555551b5: file hello.c, line 20.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) b *0x00005555555551f1
+Breakpoint 3 at 0x5555555551f1: file hello.c, line 20.
+(gdb) p[K[[Kp i
+No symbol "i" in current context.
+(gdb) p ib *0x00005555555551f10x5555555551be[1P0x5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[1Px5555555551be[C[C[C[C[C[C[C[C[C[C[C[1P5555555551be[C[C[C[C[C[C[C[C[C[C
+Breakpoint 4 at 0x5555555551be: file hello.c, line 21.
+(gdb) [[Kp ui[K[Ki
+No symbol "i" in current context.
+(gdb) b [K *00005555555551bc
+Invalid number "00005555555551bc".
+(gdb) b *00005555555551bc[C[C[C[C05555555551bc[C[C[C[C[C[C[C[C[C[Cx00005555555551bc[C[C[C[C[C[C[C[C[C[C[C
+Breakpoint 5 at 0x5555555551bc: file hello.c, line 20.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) p ib *0x00005555555551bc[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K0x00005555555551ee
+Breakpoint 6 at 0x5555555551ee: file hello.c, line 20.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) p ib *0x00005555555551ee[K[Kf1
+Note: breakpoint 3 also set at pc 0x5555555551f1.
+Breakpoint 7 at 0x5555555551f1: file hello.c, line 20.
+(gdb) b *0x00005555555551f1[C[C[C[C[C[Cp i[K
+No symbol "i" in current context.
+(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 20937] will be killed.
+
+Quit anyway? (y or n) y
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start joe
+Temporary breakpoint 1 at 0x1183: file hello.c, line 16.
+Starting program: /import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files/hello joe
+
+Temporary breakpoint 1, main (argc=2, argv=0x7fffffffe778) at hello.c:16
+16	  if (argc == 1) {
+(gdb) dias[K[Ksass /m
+Dump of assembler code for function main:
+15	{
+   0x0000555555555174 <+0>:	push   %rbp
+   0x0000555555555175 <+1>:	mov    %rsp,%rbp
+   0x0000555555555178 <+4>:	sub    $0x20,%rsp
+   0x000055555555517c <+8>:	mov    %edi,-0x14(%rbp)
+   0x000055555555517f <+11>:	mov    %rsi,-0x20(%rbp)
+
+16	  if (argc == 1) {
+=> 0x0000555555555183 <+15>:	cmpl   $0x1,-0x14(%rbp)
+   0x0000555555555187 <+19>:	jne    0x5555555551b5 <main+65>
+
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+   0x0000555555555189 <+21>:	mov    -0x20(%rbp),%rax
+   0x000055555555518d <+25>:	mov    (%rax),%rdx
+   0x0000555555555190 <+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+   0x0000555555555197 <+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+   0x000055555555519e <+42>:	mov    %rax,%rdi
+   0x00005555555551a1 <+45>:	mov    $0x0,%eax
+   0x00005555555551a6 <+50>:	callq  0x555555555030 <fprintf@plt>
+
+18	    exit(0xdeadbeef);
+   0x00005555555551ab <+55>:	mov    $0xdeadbeef,%edi
+   0x00005555555551b0 <+60>:	callq  0x555555555040 <exit@plt>
+
+19	  }
+20	  for (int i = 1; i < argc; i++) {
+--Type <RET> for more, q to quit, c to continue without paging--c
+   0x00005555555551b5 <+65>:	movl   $0x1,-0x4(%rbp)
+   0x00005555555551bc <+72>:	jmp    0x5555555551eb <main+119>
+   0x00005555555551e7 <+115>:	addl   $0x1,-0x4(%rbp)
+   0x00005555555551eb <+119>:	mov    -0x4(%rbp),%eax
+   0x00005555555551ee <+122>:	cmp    -0x14(%rbp),%eax
+   0x00005555555551f1 <+125>:	jl     0x5555555551be <main+74>
+
+21	    hello(stdout, argv[i]);
+   0x00005555555551be <+74>:	mov    -0x4(%rbp),%eax
+   0x00005555555551c1 <+77>:	cltq   
+   0x00005555555551c3 <+79>:	lea    0x0(,%rax,8),%rdx
+   0x00005555555551cb <+87>:	mov    -0x20(%rbp),%rax
+   0x00005555555551cf <+91>:	add    %rdx,%rax
+   0x00005555555551d2 <+94>:	mov    (%rax),%rdx
+   0x00005555555551d5 <+97>:	mov    0x2e64(%rip),%rax        # 0x555555558040 <stdout@@GLIBC_2.2.5>
+   0x00005555555551dc <+104>:	mov    %rdx,%rsi
+   0x00005555555551df <+107>:	mov    %rax,%rdi
+   0x00005555555551e2 <+110>:	callq  0x555555555145 <hello>
+
+22	  }
+23	  return 0;
+   0x00005555555551f3 <+127>:	mov    $0x0,%eax
+
+24	}
+   0x00005555555551f8 <+132>:	leaveq 
+   0x00005555555551f9 <+133>:	retq   
+
+End of assembler dump.
+(gdb) b * 0x00005555555551b5
+Breakpoint 2 at 0x5555555551b5: file hello.c, line 20.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) p ib * 0x00005555555551b50x5555555551eb[1P50x5555555551eb[1P50x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P0x5555555551eb[1P50x5555555551eb[1P0x5555555551eb[1Px5555555551eb[1Px5555555551eb[1Px5555555551eb[C[C[C[C[C[C[C[C[C[C[C[C[1P0x5555555551eb[C[C[C[C[C[C[C[C[C[C[C[1Px5555555551eb[C[C[C[C[C[C[C[C[C[C
+Breakpoint 3 at 0x5555555551eb: file hello.c, line 20.
+(gdb) b * 0x5555555551eb[C[C[C[C[C[Cp i[K
+No symbol "i" in current context.
+(gdb) 0x00005555555551eeb0x00005555555551ee[C[C[C[C[C[C[C 0x00005555555551ee[C[C[C[C[C[C[C[C*0x00005555555551ee[C[C[C[C[C[C[C[C[C
+Breakpoint 4 at 0x5555555551ee: file hello.c, line 20.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) p i
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) 
+No symbol "i" in current context.
+(gdb) ni
+0x0000555555555187	16	  if (argc == 1) {
+(gdb) ni
+
+Breakpoint 2, main (argc=2, argv=0x7fffffffe778) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+20	  for (int i = 1; i < argc; i++) {
+(gdb) p i
+$1 = 1
+(gdb) b *0x7fffffffe778
+Breakpoint 5 at 0x7fffffffe778
+(gdb) char [K[K[K[K[Kp char(char[C[C[C[C *)0x7fffffffe778
+$2 = 0x7fffffffe778 "W\352\377\377\377\177"
+(gdb) ni
+
+Breakpoint 3, 0x00005555555551eb in main (argc=2, argv=0x7fffffffe778) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+
+Breakpoint 4, 0x00005555555551ee in main (argc=2, argv=0x7fffffffe778) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) ni 
+0x00005555555551f1	20	  for (int i = 1; i < argc; i++) {
+(gdb) n i[K[Ki
+21	    hello(stdout, argv[i]);
+(gdb) p (char *)0x00005555555551f1
+$3 = 0x5555555551f1 <main+125> "|˸"
+(gdb) 
+$4 = 0x5555555551f1 <main+125> "|˸"
+(gdb) 
+$5 = 0x5555555551f1 <main+125> "|˸"
+(gdb) 
+$6 = 0x5555555551f1 <main+125> "|˸"
+(gdb) 
+$7 = 0x5555555551f1 <main+125> "|˸"
+(gdb) 
+$8 = 0x5555555551f1 <main+125> "|˸"
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 22377] will be killed.
+
+Quit anyway? (y or n) y
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ make clean
+rm -f hello hello.s *.objdump *~
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9/files$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9$ git add _[K-A
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab9$ git commit -[K[K[K[K[K[K[K[K[K[K[K[Kgit mv work/prj1-sol submit[1P submit[

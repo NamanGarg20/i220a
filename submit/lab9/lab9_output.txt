@@ -1,0 +1,4 @@
+ex2:
+.and    $0x7fffff,%eax
+the mask is 0x7fffff as it is the 'and' operation with %eax so we can deduce that it is the mask
+
