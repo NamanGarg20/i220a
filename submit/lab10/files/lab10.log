@@ -1,0 +1,129 @@
+Script started on 2019-10-24 11:43:26-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="105" LINES="32"]
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd rotate
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rotate$ make
+cc -S -Wall -Og -std=c11 rotate.c
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rotate$ ./rotate
+bash: ./rotate: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rotate$ ./rotate
+bash: ./rotate: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rotate$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ c [Kd cpuid1
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid1$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid1$ ,[K./cup[K[Kpuid
+cpuid: eax = 0xd; ebx = 0x756e6547; edx = 0x49656e69; ecx = 0x6c65746e
+vendor: GenuineIntel
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid1$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd cupid2
+bash: cd: cupid2: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd cupid2[K[K[K[K[Kpiud2
+bash: cd: cpiud2: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd p[Kcpuid2
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid2$ make
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid2$ makecd cpuid2iud2uid2[5Pmake[K./ci[Kupid
+bash: ./cupid: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid2$ ./cupid[K[K[K[Kpi[Kuid
+usage: ./cpuid CPUID_OP
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid2$ ./cpuid 1
+Segmentation fault
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid2$ ./cpuid 1[K0
+Segmentation fault
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/cpuid2$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd parity
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ male[K[Kke
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ ./pai[Krity
+usage: ./parity INT1...
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ ./parity 1
+parity(1) = 1
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ ./parity 1 2 3 4 5 6 7 1 5 21
+parity(1) = 1
+parity(2) = 2
+parity(3) = 3
+parity(4) = 4
+parity(5) = 5
+parity(6) = 6
+parity(7) = 7
+parity(15) = 15
+parity(21) = 21
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ ./parity 1 2 3 4 5 6 7 15 21[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[4Pmake
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ make./parity 1 2 3 4 5 6 7 15 21
+parity(1) = 0
+parity(2) = 0
+parity(3) = 1
+parity(4) = 0
+parity(5) = 1
+parity(6) = 1
+parity(7) = 0
+parity(15) = 1
+parity(21) = 0
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ ./parity -1 0 -2
+parity(-1) = 1
+parity(0) = 1
+parity(-2) = 0
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/parity$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd rip
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rip$ mmake[K[K[K[Kake
+cc -Wall -Og -std=c11 -S rip.c
+cc -Wall -Og -std=c11    rip.c   -o rip
+objdump -d rip > rip.dump
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rip$ ./rip
+&get_rip() = 0x561737ebe135; rip = 0x561737ebe13c
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rip$ __asm__("leaq (%%rip), %0": =r(rip));
+bash: syntax error near unexpected token `"leaq (%%rip), %0":'
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rip$ 
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rip$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd rsp
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krsp[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   return [01;35m[Krsp[m[K;
+          [01;35m[K^~~[m[K
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Krsp[m[K’ is used uninitialized in this function [[01;35m[K-Wuninitialized[m[K]
+   return [01;35m[Krsp[m[K;
+          [01;35m[K^~~[m[K
+objdump -d rsp > rsp.dump
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:30:[m[K [01;31m[Kerror: [m[Kexpected string literal before ‘[01m[K=[m[K’ token
+  __asm__("leaq (%%rsp), %0": [01;31m[K=[m[Kr(rsp));
+                              [01;31m[K^[m[K
+make: *** [Makefile:15: rsp.s] Error 1
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:9:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ or ‘[01m[K)[m[K’ before ‘[01m[K([m[K’ token
+  __asm__("leaq (%%rsp), %0: =r"[01;31m[K([m[Krsp));
+                                [01;31m[K^[m[K
+make: *** [Makefile:15: rsp.s] Error 1
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rsp$ make
+cc -Wall -Og -std=c11 -S rsp.c
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+objdump -d rsp > rsp.dump
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rsp$ ./ma[K[Krsp
+&stkVar = 0x7fff0eb63b8c; rsp = 0x7fff0eb63b78
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files/rsp$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10/files$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10$ gitcd [K[K[K[K[K[Kcd ~i220a
+bash: cd: ~i220a: No such file or directory
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work/lab10$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a/work$ cd ..
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a$ git mv work?[K/lab10 sun[Kbmit
+fatal: source directory is empty, source=work/lab10, destination=submit/lab10
+ngarg3@g7-17:/import/linux/home1/ngarg3/git-repos/i220a$ git commit - [Ka -m "sumit[K[Kbmitted lab10"[1P
+On branch master
+Your branch is up to date with 'origin/master'.

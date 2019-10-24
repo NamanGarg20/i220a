@@ -1,0 +1,5 @@
+Ex1:
+In rotl() function, the bits entered are rotated towards the left, whereas in rotr() function is rotated towards the right the number of times we want to shift. .In rotate.s file roll and rorl perform same task as functiom rotl() and rotr(), the roll is called for %cl, %edi and in rolr %cl, %esi, which takes in the parameters and shifts the bits of %esi and %edi by %cl times, simultaneously adding the shifted bits to the left or the right.
+
+
+	
