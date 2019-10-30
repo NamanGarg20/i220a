@@ -1,0 +1,103 @@
+2019 Fall CS 220 - Project 2 Grading Report
+Student Name: Garg Naman
+Grader Name: Li Yongheng
+
+----------(40%) 0. compile program-----------
+$ make
+gcc    -c -o main.o main.c
+gcc    -c -o big-bits.o big-bits.c
+gcc    -c -o errors.o errors.c
+gcc    -c -o hex-util.o hex-util.c
+gcc    -c -o stack.o stack.c
+gcc main.o big-bits.o errors.o hex-util.o stack.o -g -Wall -std=c11 -D_POSIX_C_SOURCE=200809L -o big-bits
+>>> output: compilation succeeded.
++++ result: -0
++++ comment: 
+
+----------(8%) 1. good_input_1 -----------
+$ ./big-bits < grading/good_input_1.txt > grading/good_input_generated_output_1.txt
+>>> expect: 
+0xfff_ffff_ffff_ffff
+0x2a2a_2a2a_2a2a_2a2a_2a2a
+0x6666_6666_6666_6666_6666_6666_6666_6666_6666
+0xff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff
+>>> output: 
+0xfff_ffff_ffff_ffff
+0x2a2a_2a2a_2a2a_2a2a_2a2a
+0x6666_6666_6666_6666_6666_6666_6666_6666_6666
+0xff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff
++++ result: -0
++++ comment: 
+
+----------(8%) 2. good_input_2 -----------
+$ ./big-bits < grading/good_input_2.txt > grading/good_input_generated_output_2.txt
+>>> expect: 
+0xb
+0xb
+0x0
+0xaa_aaaa_aaaa_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb
+>>> output: 
+0xbC
+0xbC
+0x0D
+0xaa_aaaa_aaaa_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb_bbbb
++++ result: -0
++++ comment: 
+
+----------(8%) 3. good_input_3 -----------
+$ ./big-bits < grading/good_input_3.txt > grading/good_input_generated_output_3.txt
+>>> expect: 
+0x222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2eee_eeee
+0xbb_bbbb_bbbb_b999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9fff_ffff
+0xaaa_aaaa
+0x222_2222
+>>> output: 
+0x222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2222_2eee_eeee
+0xbb_bbbb_bbbb_b999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9999_9fff_ffff
+0xaaa_aaaa
+0x222_2222
++++ result: -0
++++ comment: 
+
+----------(8%) 4. good_input_4 -----------
+$ ./big-bits < grading/good_input_4.txt > grading/good_input_generated_output_4.txt
+>>> expect: 
+0xeee_eeee_eeee_eeee_eeee_eeee_eeee_eee0_0011
+0xeee_eeee_e111_1111_1111_1111_1111_1111_1166
+0xeee_eeee_eeee_eeee_eeee_eeee_eeee_eeee_ee99
+0xffff_ffff_ffff_ffff_ffff_ffff_f111_1111_1eee_eeee_eeee_eeee_eeee_eee0_0077
+>>> output: 
+0xeee_eeee_eeee_eeee_eeee_eeee_eeee_eee0_0011
+0xeee_eeee
+0xeee_eeee_eeee_eeee_eeee_eeee_eeee_eeee_ee99
+0xffff_ffff_ffff_ffff_ffff_ffff_f111_1111_1eee_eeee_eeee_eeee_eeee_eee0_0077
++++ result: -0
++++ comment: 
+
+----------(4%) 5. memory check -----------
+$ valgrind --log-file=grading/memory_check.txt ./big-bits < grading/good_input_4.txt
+>>> output: 
+==5869== HEAP SUMMARY:
+==5869==     in use at exit: 655 bytes in 16 blocks
+==5869==   total heap usage: 79 allocs, 63 frees, 11,393 bytes allocated
+==5869== ERROR SUMMARY: 457 errors from 16 contexts (suppressed: 0 from 0)
++++ result: -0
++++ comment: 
+
+--------------------Summary--------------------
+Grading Time: Fri 25 Oct 2019 04:39:37 PM EDT
+Project Due Date: Fri Oct 11 23:59:59 2019 -0400
+GitHub Submission Info: 
+commit 5c7f7053fb435964b62425e17096b08fda8c94dd
+Author: Naman Garg <ngarg3@binghamton.edu>
+Date:   Mon Oct 14 13:40:21 2019 -0400
+
+    submitted project2
+
+Late Date Used: 
+Late Date Left: 7
+Late Submission Penalty: -0
+
+Coding Style: -0
+
+Total Points: 
