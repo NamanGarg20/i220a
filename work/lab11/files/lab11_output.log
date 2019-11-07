@@ -1,0 +1,197 @@
+ex1:
+input: time ls ~/cs220/labs/lab11/files
+output: coverage  int-search  matmul-cache  parity
+
+	real	0m0.005s
+	user	0m0.001s
+	sys	0m0.002s
+
+input: time sleep 5
+output:
+	real	0m5.003s
+	user	0m0.001s
+	sys	0m0.001s
+
+input: time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+output:     34 /etc/logrotate.conf.dpkg-old
+	    618 /etc/matplotlibrc2
+	     15 /etc/nftables.conf
+	     56 /etc/ntp.conf.dpkg-old
+	      3 /etc/sbclrc
+	     40 /etc/usb_modeswitch.conf
+	      1 /etc/video_format
+	     21 /etc/xattr.conf
+	     23 /etc/sysfs.conf
+	 166652 total
+
+ex2: 
+
+input:./parity [K-s - 
+output: d 10
+	67: 0
+	c6: 1
+	69: 1
+	73: 0
+	51: 0
+	ff: 1
+	4a: 0
+	ec: 0
+	29: 0
+	cd: 0
+	3
+
+input: time ./parity-s -d 10
+output: 67: 0
+	c6: 1
+	69: 1
+	73: 0
+	51: 0
+	ff: 1
+	4a: 0
+	ec: 0
+	29: 0
+	cd: 0
+	3
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.000s
+input: time ./parity-s -d 10
+output: 67: 0
+	c6: 1
+	69: 1
+	73: 0
+	51: 0
+	ff: 1
+	4a: 0
+	ec: 0
+	29: 0
+	cd: 0
+	3
+
+	real	0m0.002s
+	user	0m0.001s
+	sys	0m0.000s
+
+input: time ./parity-c 100000000 
+output:0
+	499975140
+
+	real	0m24.080s
+	user	0m24.070s
+	sys	0m0.008s
+
+
+ex3:
+input:$ ./simple-matmul 4 1
+output:2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+	2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+	4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+	7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+input: ./transpose-matmul 4 1
+	output:2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+	2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+	4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+	7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+
+
+input: for s in `seq 1000 500 2500`; \
+	>  do \
+	> echo -n "*** Size $s: simple"; time ./simple-matmul $s 1 ; echo ; \
+	> echo -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \
+	> done
+	output: *** Size 1000: simple1
+	real	0m6.870s
+	user	0m6.857s
+	sys	0m0.012s
+
+	*** Size 1000: transpose
+	real	0m2.502s
+	user	0m2.472s
+	sys	0m0.028s
+
+	*** Size 1500: simple 12
+
+	real	0m24.237s
+	user	0m24.180s
+	sys	0m0.056s
+
+	*** Size 1500: transpose
+	real	0m8.625s
+	user	0m8.576s
+	sys	0m0.048s
+
+	*** Size 2000: simple
+	real	1m8.726s
+	user	1m8.658s
+	sys	0m0.064s
+
+	*** Size 2000: transpose
+	real	0m21.173s
+	user	0m21.072s
+	sys	0m0.100s
+
+	*** Size 2500: simple
+	real	2m14.276s
+	user	2m13.950s
+	sys	0m0.320s
+
+	*** Size 2500: transpose
+	real	0m41.172s
+	user	0m41.046s
+	sys	0m0.116s
+
+ex4:
+input: time ./linear-search 2000 2000
+output:
+	real	0m6.725s
+	user	0m6.722s
+	sys	0m0.000s
+
+input: time ./binary-search 2000 2000
+output:
+	real	0m0.350s
+	user	0m0.349s
+	sys	0m0.000s
+
+ex5:
+input: gcov coverage.gcda
+output:File 'coverage.c'
+	Lines executed:12.50% of 24
+	Creating 'coverage.c.gcov'
+
+input: ./coverage
+output:212 318 410
+	compute(212, 318, 410) = 1549
+	212 318 380
+	compute(212, 318, 380) = 1549
+	200 222 233
+	cooutput:mpute(200, 222, 233) = 1320
+	0 222 3454
+	compute(0, 222, 3454) = 652
+	0 41 243
+	compute(0, 41, 243) = 1320
+	439 234 890
+	compute(439, 234, 890) = 1320
+	4354 3232 322
+	compute(4354, 3232, 322) = 730
+	312 31 32
+	compute(312, 31, 32) = 1549
+	2331 321 31
+	compute(2331, 321, 31) = 1320
+	 31283 31923 381
+	compute(31283, 31923, 381) = 730
+	212 320 334
+	compute(212, 320, 334) = 971
+	212 318 412
+	compute(212, 318, 412) = 1049
+input: gcov coverage.gcda
+output:File 'coverage.c'
+	Lines executed:95.83% of 24
+	Creating 'coverage.c.gcov'
+
+
+
+

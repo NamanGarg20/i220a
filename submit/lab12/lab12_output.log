@@ -1,0 +1,359 @@
+ex1:
+input: echo \\
+\
+input: echo \'
+'
+input:  echo \*
+*
+input:  echo \$HOME\"\\
+$HOME"\
+input:  echo '\'
+\
+input:  echo '\\'
+\\
+input:  echo '*$~'
+*$~
+input:  echo '\''
+> '
+\
+
+input: "\"\\"
+"\
+input:  echo $HOMW
+
+input:  echo $HOME
+/home/ngarg3
+input:  echo \
+> abc\
+> 123
+abc123
+
+
+ls ?
+input:  echo ls *'$'*
+output:ls 1$2 a$b
+
+input: ls *"'"*
+output:"'12"  "a'b"
+input: ls '\'*
+output:'\\ab'
+
+
+input: ls ""?""?""
+output:-rw-r--r-- 1 ngarg3 ngarg3 0 Nov  7 11:39 '**'
+
+input: ls -- ""?""?""
+output:'**'   -l
+
+EX2:
+input: env
+Output: SHELL=/bin/bash
+	SESSION_MANAGER=local/g7-27:@/tmp/.ICE-unix/11194,unix/g7-27:/tmp/.ICE-unix/11194
+	WINDOWID=50331651
+	QT_ACCESSIBILITY=1
+	COLORTERM=truecolor
+	XDG_CONFIG_DIRS=/etc/xdg
+	XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session23
+	XDG_MENU_PREFIX=xfce-
+	SSH_AUTH_SOCK=/tmp/ssh-a1EBuwNvLeAO/agent.11149
+	DESKTOP_SESSION=lightdm-xsession
+	SSH_AGENT_PID=11184
+	GTK_MODULES=gail:atk-bridge
+	XDG_SEAT=seat0
+	KRB5CCNAME=FILE:/tmp/krb5cc_14419_mMfMDp
+	PWD=/import/linux/home1/ngarg3/git-repos/i220a/work/lab12/files/quote-files
+	LOGNAME=ngarg3
+	XDG_SESSION_DESKTOP=lightdm-xsession
+	XDG_SESSION_TYPE=x11
+	XAUTHORITY=/home/ngarg3/.Xauthority
+	XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/ngarg3
+	HOME=/home/ngarg3
+	LANG=en_US.utf8
+	XDG_CURRENT_DESKTOP=XFCE
+	VTE_VERSION=5402
+	XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+	GLADE_CATALOG_PATH=:
+	XDG_SESSION_CLASS=user
+	TERM=xterm-256color
+	USER=ngarg3
+	DISPLAY=:4.0
+	SHLVL=2
+	XDG_VTNR=11
+	XDG_SESSION_ID=77
+	GLADE_MODULE_PATH=:
+	XDG_RUNTIME_DIR=/run/user/14419
+	GLADE_PIXMAP_PATH=:
+	XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share
+	PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+	GDMSESSION=lightdm-xsession
+	DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14419/bus
+	OLDPWD=/import/linux/home1/ngarg3/git-repos/i220a/work/lab12/files
+	_=/usr/bin/env
+
+input: echo $HOME
+output:/home/ngarg3
+
+input: echo $PATH
+output:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+input: xxx=123
+input: echo $xxx
+output:123
+
+input: env | grep xxx
+input: export xxx
+input: env | grep xxx
+output:xxx=123
+
+input: export xx=456
+input: env | grep xx
+xxx=123
+xx=456
+Input: export p=$PATH
+echo $p
+Output: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+Input: export PATH=
+echo $PATH
+Output:
+
+Input: ls
+Output: bash: ls: No such file or directory
+
+Input: export PATH=$p
+ls
+Output: '**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+
+ex3:
+input: ls ; wc *
+Output: '**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+	0 **
+	0 1$2
+	0 '12
+	0 1"2
+	0 a$b
+	0 \\ab
+	0 a"b
+	0 a'b
+	0 total
+
+input: find -L ~/cs220 -name '*.c' 
+output:/home/ngarg3/cs220/exercises/questions/src/x86/fns-asm.c
+	/home/ngarg3/cs220/labs/lab2/files/ex1/hello.c
+	/home/ngarg3/cs220/labs/lab2/files/ex3/main.c
+	/home/ngarg3/cs220/labs/lab2/files/ex3/quadr.c
+	/home/ngarg3/cs220/labs/lab2/files/ex4/key-value.c
+	/home/ngarg3/cs220/labs/lab2/files/ex4/main.c
+	/home/ngarg3/cs220/labs/lab2/files/ex4/process-file.c
+	/home/ngarg3/cs220/labs/lab3/files/ex1/hello.c
+	/home/ngarg3/cs220/labs/lab3/files/ex2/hello.c
+	/home/ngarg3/cs220/labs/lab4/files/ex1/uints.c
+	/home/ngarg3/cs220/labs/lab4/files/ex2/ints.c
+	/home/ngarg3/cs220/labs/lab4/files/ex3/identify.c
+	/home/ngarg3/cs220/labs/lab4/files/ex4/negeq.c
+	/home/ngarg3/cs220/labs/lab4/files/ex6/0.1.c
+	/home/ngarg3/cs220/labs/lab4/files/ex7/nan.c
+	/home/ngarg3/cs220/labs/lab4/files/ex8/ulp.c
+	/home/ngarg3/cs220/labs/lab4/files/ex9/loop.c
+	/home/ngarg3/cs220/labs/lab5/files/ex1/pointers.c
+	/home/ngarg3/cs220/labs/lab5/files/ex2/in-pointers.c
+	/home/ngarg3/cs220/labs/lab5/files/ex3/bad-types.c
+	/home/ngarg3/cs220/labs/lab5/files/ex4/cast-types.c
+	/home/ngarg3/cs220/labs/lab5/files/ex5/void-pointers.c
+	/home/ngarg3/cs220/labs/lab5/files/ex6/in-voids.c
+	/home/ngarg3/cs220/labs/lab6/files/brk/brk.c
+	/home/ngarg3/cs220/labs/lab6/files/bug-program/bug-program.c
+	/home/ngarg3/cs220/labs/lab6/files/process-memory/process-memory.c
+	/home/ngarg3/cs220/labs/lab7/files/libgeom/circ.c
+	/home/ngarg3/cs220/labs/lab7/files/libgeom/rect.c
+	/home/ngarg3/cs220/labs/lab7/files/libgeom/testgeom.c
+	/home/ngarg3/cs220/labs/lab7/files/libvec/addvec.c
+	/home/ngarg3/cs220/labs/lab7/files/libvec/multvec.c
+	/home/ngarg3/cs220/labs/lab7/files/libvec/testvec.c
+	/home/ngarg3/cs220/labs/lab7/files/log10/log10.c
+	/home/ngarg3/cs220/labs/lab7/files/multiple-defs/f.c
+	/home/ngarg3/cs220/labs/lab7/files/multiple-defs/main.c
+	/home/ngarg3/cs220/labs/lab7/files/multiple-symbols/def1.c
+	/home/ngarg3/cs220/labs/lab7/files/multiple-symbols/def2.c
+	/home/ngarg3/cs220/labs/lab7/files/multiple-symbols/main.c
+	/home/ngarg3/cs220/labs/lab7/files/static-dynamic/log10.c
+	/home/ngarg3/cs220/labs/lab8/files/hello-multi.c
+	/home/ngarg3/cs220/labs/lab8/files/hello-one.c
+	/home/ngarg3/cs220/labs/lab9/files/hello.c
+	/home/ngarg3/cs220/labs/lab10/files/cpuid1/main.c
+	/home/ngarg3/cs220/labs/lab10/files/cpuid2/main.c
+	/home/ngarg3/cs220/labs/lab10/files/parity/main.c
+	/home/ngarg3/cs220/labs/lab10/files/rip/rip.c
+	/home/ngarg3/cs220/labs/lab10/files/rotate/rotate.c
+	/home/ngarg3/cs220/labs/lab10/files/rsp/rsp.c
+	/home/ngarg3/cs220/labs/lab11/files/coverage/coverage.c
+	/home/ngarg3/cs220/labs/lab11/files/int-search/binary-search.c
+	/home/ngarg3/cs220/labs/lab11/files/int-search/int_compare.c
+	/home/ngarg3/cs220/labs/lab11/files/int-search/linear-search.c
+	/home/ngarg3/cs220/labs/lab11/files/int-search/main.c
+	/home/ngarg3/cs220/labs/lab11/files/matmul-cache/main.c
+	/home/ngarg3/cs220/labs/lab11/files/matmul-cache/simple-matmul.c
+	/home/ngarg3/cs220/labs/lab11/files/matmul-cache/transpose-matmul.c
+	/home/ngarg3/cs220/labs/lab11/files/parity/main.c
+	/home/ngarg3/cs220/labs/lab11/files/parity/parity-c.c
+	/home/ngarg3/cs220/labs/lab11/files/parity/parity-s.c
+	/home/ngarg3/cs220/misc/bin-num/220a/bin-num.c
+	/home/ngarg3/cs220/misc/bin-num/220a/main.c
+	/home/ngarg3/cs220/misc/bin-num/220b/bin-num.c
+	/home/ngarg3/cs220/misc/bin-num/220b/main.c
+	/home/ngarg3/cs220/misc/shapes/cs220a/shapes.c
+	/home/ngarg3/cs220/misc/shapes/cs220b/shapes.c
+	/home/ngarg3/cs220/projects/prj1/prj1-sol/bits-to-ints.c
+	/home/ngarg3/cs220/projects/prj1/prj1-sol/errors.c
+	/home/ngarg3/cs220/projects/prj1/prj1-sol/main.c
+	/home/ngarg3/cs220/projects/prj1-sol/bits-to-ints.c
+	/home/ngarg3/cs220/projects/prj1-sol/errors.c
+	/home/ngarg3/cs220/projects/prj1-sol/main.c
+	/home/ngarg3/cs220/projects/prj2/prj2-sol/big-bits.c
+	/home/ngarg3/cs220/projects/prj2/prj2-sol/errors.c
+	/home/ngarg3/cs220/projects/prj2/prj2-sol/hex-util.c
+	/home/ngarg3/cs220/projects/prj2/prj2-sol/main.c
+	/home/ngarg3/cs220/projects/prj2/prj2-sol/stack.c
+	/home/ngarg3/cs220/projects/prj2-sol/alt-big-bits.c
+	/home/ngarg3/cs220/projects/prj2-sol/big-bits.c
+	/home/ngarg3/cs220/projects/prj2-sol/errors.c
+	/home/ngarg3/cs220/projects/prj2-sol/hex-util.c
+	/home/ngarg3/cs220/projects/prj2-sol/main.c
+	/home/ngarg3/cs220/projects/prj2-sol/stack.c
+	/home/ngarg3/cs220/slides/c-intro/code/bases.c
+	/home/ngarg3/cs220/slides/c-intro/code/count-1s-1.c
+	/home/ngarg3/cs220/slides/c-intro/code/count-1s-2.c
+	/home/ngarg3/cs220/slides/c-intro/code/endian.c
+	/home/ngarg3/cs220/slides/c-intro/code/integer-sizes.c
+	/home/ngarg3/cs220/slides/c-intro/code/kilo-powers.c
+	/home/ngarg3/cs220/slides/c-intro/code/out-bits.c
+	/home/ngarg3/cs220/slides/c-intro/code/ptr-sum.c
+	/home/ngarg3/cs220/slides/c-intro/code/robust-sum.c
+	/home/ngarg3/cs220/slides/c-intro/code/sum-args.c
+	/home/ngarg3/cs220/slides/c-intro/code/sum.c
+	/home/ngarg3/cs220/slides/c-intro/code/wc.c
+	/home/ngarg3/cs220/slides/intro/code/hello.c
+	/home/ngarg3/cs220/slides/adts/code/stack.c
+	/home/ngarg3/cs220/slides/x86/code/arith.c
+	/home/ngarg3/cs220/slides/x86/code/conditional-move.c
+	/home/ngarg3/cs220/slides/x86/code/div-mod.c
+	/home/ngarg3/cs220/slides/x86/code/dynamic-array.c
+	/home/ngarg3/cs220/slides/x86/code/find.c
+	/home/ngarg3/cs220/slides/x86/code/mstore/main.c
+	/home/ngarg3/cs220/slides/x86/code/mstore/mstore.c
+	/home/ngarg3/cs220/slides/x86/code/scale.c
+	/home/ngarg3/cs220/slides/x86/code/sum-dist-origin.c
+	/home/ngarg3/cs220/slides/x86/code/abs-diff.c
+	/home/ngarg3/cs220/slides/x86/code/cmp-sets.c
+	/home/ngarg3/cs220/slides/x86/code/fact-do-while.c
+	/home/ngarg3/cs220/slides/x86/code/fact-while.c
+	/home/ngarg3/cs220/slides/x86/code/indirect-goto.c
+	/home/ngarg3/cs220/slides/x86/code/sum.c
+	/home/ngarg3/cs220/slides/x86/code/point3.c
+	/home/ngarg3/cs220/slides/x86/code/stack-frame.c
+	/home/ngarg3/cs220/slides/x86/code/structs.c
+	/home/ngarg3/cs220/slides/x86/code/sum-dist-origin-s.c
+	/home/ngarg3/cs220/slides/x86/code/switch.c
+	/home/ngarg3/cs220/slides/x86/code/read-point.c
+	/home/ngarg3/cs220/slides/x86/code/array-access.c
+	/home/ngarg3/cs220/slides/x86/code/move.c
+	/home/ngarg3/cs220/slides/x86/code/rec-fact.c
+	/home/ngarg3/cs220/slides/x86/code/vframe.c
+	/home/ngarg3/cs220/slides/x86/code/acc-fact.c
+	/home/ngarg3/cs220/slides/advanced-c/code/enum-strings.c
+	/home/ngarg3/cs220/slides/advanced-c/code/oo-shapes/circle.c
+	/home/ngarg3/cs220/slides/advanced-c/code/oo-shapes/main.c
+	/home/ngarg3/cs220/slides/advanced-c/code/oo-shapes/rect.c
+	/home/ngarg3/cs220/slides/advanced-c/code/oo-shapes/shape.c
+	/home/ngarg3/cs220/slides/advanced-c/code/stack/main.c
+	/home/ngarg3/cs220/slides/advanced-c/code/stack/stack.c
+	/home/ngarg3/cs220/slides/advanced-c/code/float-decode.c
+
+input: find -L ~/cs220 -name '*.c' | wc -l
+output:130
+
+input: find / -name '*.c' 2>/dev/null >c-files.lst &
+[2] 17697
+[1]   Exit 127                ind / -name '*.c' 2> /dev/null > c-files.lst
+
+ex4:
+input: pwd
+output: /home/ngarg3
+
+input: xx=123
+input: pwd;pwd; echo $xx; (xx=abc; cd /; pwd; echo $xx); pwd; echo $xx
+output:/home/ngarg3
+	/home/ngarg3
+	123
+	/
+	abc
+	/home/ngarg3
+	123
+
+ex5:
+input: grep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'`
+output:/home/ngarg3/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+	/home/ngarg3/cs220/projects/prj1-sol/main.c:main(int argc, const char *argv[])
+	/home/ngarg3/cs220/projects/prj2/prj2-sol/main.c:main()
+	/home/ngarg3/cs220/projects/prj2-sol/main.c:main()
+
+Input: wc -l 'MAIN(' `find ~/cs220/projects -name '*.[ch]'`
+output:wc: 'MAIN(': No such file or directory
+	   54 /home/ngarg3/cs220/projects/prj1/prj1-sol/bits-to-ints.c
+	   47 /home/ngarg3/cs220/projects/prj1/prj1-sol/bits-to-ints.h
+	   30 /home/ngarg3/cs220/projects/prj1/prj1-sol/errors.c
+	   14 /home/ngarg3/cs220/projects/prj1/prj1-sol/errors.h
+	   58 /home/ngarg3/cs220/projects/prj1/prj1-sol/main.c
+	  178 /home/ngarg3/cs220/projects/prj1-sol/bits-to-ints.c
+	   46 /home/ngarg3/cs220/projects/prj1-sol/bits-to-ints.h
+	   30 /home/ngarg3/cs220/projects/prj1-sol/errors.c
+	   14 /home/ngarg3/cs220/projects/prj1-sol/errors.h
+	   58 /home/ngarg3/cs220/projects/prj1-sol/main.c
+	   87 /home/ngarg3/cs220/projects/prj2/prj2-sol/big-bits.c
+	   61 /home/ngarg3/cs220/projects/prj2/prj2-sol/big-bits.h
+	   30 /home/ngarg3/cs220/projects/prj2/prj2-sol/errors.c
+	   14 /home/ngarg3/cs220/projects/prj2/prj2-sol/errors.h
+	   49 /home/ngarg3/cs220/projects/prj2/prj2-sol/hex-util.c
+	   18 /home/ngarg3/cs220/projects/prj2/prj2-sol/hex-util.h
+	   52 /home/ngarg3/cs220/projects/prj2/prj2-sol/stack.h
+	  302 /home/ngarg3/cs220/projects/prj2/prj2-sol/main.c
+	   75 /home/ngarg3/cs220/projects/prj2/prj2-sol/stack.c
+	  140 /home/ngarg3/cs220/projects/prj2-sol/alt-big-bits.c
+	  184 /home/ngarg3/cs220/projects/prj2-sol/big-bits.c
+	   61 /home/ngarg3/cs220/projects/prj2-sol/big-bits.h
+	   30 /home/ngarg3/cs220/projects/prj2-sol/errors.c
+	   14 /home/ngarg3/cs220/projects/prj2-sol/errors.h
+	   49 /home/ngarg3/cs220/projects/prj2-sol/hex-util.c
+	   18 /home/ngarg3/cs220/projects/prj2-sol/hex-util.h
+	  302 /home/ngarg3/cs220/projects/prj2-sol/main.c
+	   75 /home/ngarg3/cs220/projects/prj2-sol/stack.c
+	   52 /home/ngarg3/cs220/projects/prj2-sol/stack.h
+	 2142 total
+
+
+ex6:
+input: echo $?
+1
+input: false; echo 123
+123
+input: true; echo 123
+123
+input: false && echo 123
+input: true  && echo 123
+123
+input: false || echo 123
+123
+input: true || echo 123
+input: sleep 5 && echo 123 &
+[3] 20060
+ngarg3@g7-27:~$ 123
+
+
+
+
+
+
+
+
+
+
