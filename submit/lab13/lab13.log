@@ -1,0 +1,1348 @@
+Script started on 2019-11-14 11:43:11-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="93" LINES="24"]
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13$ cd stdin-char-count
+bash: cd: stdin-char-count: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13$ cd s[K[K[K[Kcd d[Kfiles
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files$ cd filesstdin-char-count [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ [Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ ./stdin-char-count <stdin-char-count.c
+bash: ./stdin-char-count: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ make./stdin-char-count <stdin-char-count.c
+EOF = -1
+0
+^C
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ ./stdin-char-count <stdin-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+[01m[Kstdin-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kstdin-char-count.c:7:12:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar[m[K’ from ‘[01m[Kconst char *[m[K’ makes integer from pointer without a cast [[01;35m[K-Wint-conversion[m[K]
+   char c = [01;35m[Kargv[m[K[1];
+            [01;35m[K^~~~[m[K
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+[01m[Kstdin-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kstdin-char-count.c:7:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Katoi[m[K’ in something not a structure or union
+   char c = argv[01;31m[K.[m[Katoi(1);
+                [01;31m[K^[m[K
+make: *** [<builtin>: stdin-char-count] Error 1
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ make[Kmake[Kmake./stdin-char-count <stdin-char-count.c
+EOF = -1
+Segmentation fault
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ ./stdin-char-count <stdin-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ make[Kmake./stdin-char-count <stdin-char-count.c
+EOF = -1
+206
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ wc stdin-char-count.c.
+wc: stdin-char-count.c.: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ makwe[K[Ke
+make: 'stdin-char-count' is up to date.
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ makewc stdin-char-count.c.
+wc: stdin-char-count.c.: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/stdin-char-count$ cd ..
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files$ cd file-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ ./file-char-count file-char-count.c
+566
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ wc
+file-char-count
+.c
+^[[A^[[A^[[A^[[B^[[B^[[B                        file-char-count.c
+^C
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ wc file-char-c ount.c
+ 27  81 566 file-char-count.c
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ ./file-char-count xxx
+cannot read xxx: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ ./file-char-count xxx[K[K[K[K 123
+cannot read 123: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c
+==6990== Memcheck, a memory error detector
+==6990== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6990== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==6990== Command: ./file-char-count file-char-count.c
+==6990== 
+566
+==6990== 
+==6990== HEAP SUMMARY:
+==6990==     in use at exit: 552 bytes in 1 blocks
+==6990==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==6990== 
+==6990== LEAK SUMMARY:
+==6990==    definitely lost: 0 bytes in 0 blocks
+==6990==    indirectly lost: 0 bytes in 0 blocks
+==6990==      possibly lost: 0 bytes in 0 blocks
+==6990==    still reachable: 552 bytes in 1 blocks
+==6990==         suppressed: 0 bytes in 0 blocks
+==6990== Rerun with --leak-check=full to see details of leaked memory
+==6990== 
+==6990== For counts of detected and suppressed errors, rerun with: -v
+==6990== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ 
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-char-count 123[Kxxx[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc file-char-co[1Punt.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-char-count xxx123[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c
+==7348== Memcheck, a memory error detector
+==7348== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7348== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==7348== Command: ./file-char-count file-char-count.c
+==7348== 
+577
+==7348== Invalid read of size 4
+==7348==    at 0x48F91EA: _IO_flush_all_lockp (genops.c:701)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f100 is 192 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F91F8: _IO_flush_all_lockp (genops.c:701)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f060 is 32 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F91FC: _IO_flush_all_lockp (genops.c:701)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f068 is 40 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F917B: _IO_flush_all_lockp (genops.c:695)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0a8 is 104 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F93F8: _IO_unbuffer_all (genops.c:792)
+==7348==    by 0x48F93F8: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F9400: _IO_unbuffer_all (genops.c:794)
+==7348==    by 0x48F9400: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f100 is 192 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F940B: _IO_unbuffer_all (genops.c:800)
+==7348==    by 0x48F940B: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0c8 is 136 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F9417: _IO_unbuffer_all (genops.c:800)
+==7348==    by 0x48F9417: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f128 is 232 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F9437: _IO_unbuffer_all (genops.c:800)
+==7348==    by 0x48F9437: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f120 is 224 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F9628: _IO_unbuffer_all (genops.c:800)
+==7348==    by 0x48F9628: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0c8 is 136 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F962F: _IO_unbuffer_all (genops.c:800)
+==7348==    by 0x48F962F: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f128 is 232 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 4
+==7348==    at 0x48F9633: _IO_unbuffer_all (genops.c:800)
+==7348==    by 0x48F9633: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f124 is 228 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F945E: _IO_unbuffer_all (genops.c:808)
+==7348==    by 0x48F945E: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 4
+==7348==    at 0x48F95B3: _IO_unbuffer_all (genops.c:810)
+==7348==    by 0x48F95B3: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F95C4: _IO_unbuffer_all (genops.c:812)
+==7348==    by 0x48F95C4: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0e8 is 168 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F95CB: _IO_unbuffer_all (genops.c:814)
+==7348==    by 0x48F95CB: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f078 is 56 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F95CF: _IO_unbuffer_all (genops.c:814)
+==7348==    by 0x48F95CF: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0f0 is 176 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F9469: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9469: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f118 is 216 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F8A34: _IO_default_setbuf (genops.c:453)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f118 is 216 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F5579: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:805)
+==7348==    by 0x48F8A51: _IO_default_setbuf (genops.c:453)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f068 is 40 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F557D: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:805)
+==7348==    by 0x48F8A51: _IO_default_setbuf (genops.c:453)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f060 is 32 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F55BC: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:807)
+==7348==    by 0x48F8A51: _IO_default_setbuf (genops.c:453)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f048 is 8 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F55C0: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:808)
+==7348==    by 0x48F8A51: _IO_default_setbuf (genops.c:453)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f050 is 16 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F5605: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:819)
+==7348==    by 0x48F8A51: _IO_default_setbuf (genops.c:453)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0d0 is 144 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F8A5B: _IO_default_setbuf (genops.c:455)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F8A5D: _IO_default_setbuf (genops.c:455)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f078 is 56 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 4
+==7348==    at 0x48F8AE1: _IO_default_setbuf (genops.c:457)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8AEF: _IO_setb (genops.c:332)
+==7348==    by 0x48F8AEF: _IO_default_setbuf (genops.c:458)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f078 is 56 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8AF3: _IO_setb (genops.c:333)
+==7348==    by 0x48F8AF3: _IO_default_setbuf (genops.c:458)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f080 is 64 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 4
+==7348==    at 0x48F8AF7: _IO_setb (genops.c:337)
+==7348==    by 0x48F8AF7: _IO_default_setbuf (genops.c:458)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8A8F: _IO_default_setbuf (genops.c:465)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f070 is 48 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8A9A: _IO_default_setbuf (genops.c:465)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f068 is 40 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8AA2: _IO_default_setbuf (genops.c:465)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f060 is 32 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8AAA: _IO_default_setbuf (genops.c:466)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f050 is 16 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8AB2: _IO_default_setbuf (genops.c:466)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f048 is 8 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F8ABA: _IO_default_setbuf (genops.c:466)
+==7348==    by 0x48F5678: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:390)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f058 is 24 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F567E: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:394)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f078 is 56 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F5682: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:394)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f070 is 48 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F5686: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:393)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f068 is 40 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F568A: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:393)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f060 is 32 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F568E: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:395)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f058 is 24 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F5692: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:395)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f048 is 8 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F5696: _IO_file_setbuf@@GLIBC_2.2.5 (fileops.c:395)
+==7348==    by 0x48F9488: _IO_unbuffer_all (genops.c:817)
+==7348==    by 0x48F9488: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f050 is 16 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F9489: _IO_unbuffer_all (genops.c:819)
+==7348==    by 0x48F9489: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f100 is 192 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F94AB: _IO_unbuffer_all (genops.c:823)
+==7348==    by 0x48F94AB: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0c8 is 136 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F94BB: _IO_unbuffer_all (genops.c:824)
+==7348==    by 0x48F94BB: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f124 is 228 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 8
+==7348==    at 0x48F94C5: _IO_unbuffer_all (genops.c:824)
+==7348==    by 0x48F94C5: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f128 is 232 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F94DD: _IO_unbuffer_all (genops.c:824)
+==7348==    by 0x48F94DD: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f120 is 224 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 4
+==7348==    at 0x48F93E0: _IO_unbuffer_all (genops.c:830)
+==7348==    by 0x48F93E0: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f100 is 192 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F93EB: _IO_unbuffer_all (genops.c:790)
+==7348==    by 0x48F93EB: _IO_cleanup (genops.c:867)
+==7348==    by 0x48B4E79: __run_exit_handlers (exit.c:130)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0a8 is 104 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F91EA: _IO_flush_all_lockp (genops.c:701)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f100 is 192 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F91F8: _IO_flush_all_lockp (genops.c:701)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f060 is 32 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F91FC: _IO_flush_all_lockp (genops.c:701)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f068 is 40 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F917B: _IO_flush_all_lockp (genops.c:695)
+==7348==    by 0x48F9314: _IO_cleanup (genops.c:858)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0a8 is 104 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 4
+==7348==    at 0x48F93F8: _IO_unbuffer_all (genops.c:792)
+==7348==    by 0x48F93F8: _IO_cleanup (genops.c:867)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid write of size 4
+==7348==    at 0x48F93E0: _IO_unbuffer_all (genops.c:830)
+==7348==    by 0x48F93E0: _IO_cleanup (genops.c:867)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f100 is 192 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x48F93EB: _IO_unbuffer_all (genops.c:790)
+==7348==    by 0x48F93EB: _IO_cleanup (genops.c:867)
+==7348==    by 0x49E3B37: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0a8 is 104 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x49E3AC8: buffer_free (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x49E3B59: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0f0 is 176 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== Invalid read of size 8
+==7348==    at 0x49E3AD4: buffer_free (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x49E3B59: __libc_freeres (in /lib/x86_64-linux-gnu/libc-2.28.so)
+==7348==    by 0x482B19E: _vgnU_freeres (vg_preloaded.c:77)
+==7348==    by 0x48B4E89: __run_exit_handlers (exit.c:132)
+==7348==    by 0x48B4EB9: exit (exit.c:139)
+==7348==    by 0x489F0A1: (below main) (libc-start.c:342)
+==7348==  Address 0x4a3f0e8 is 168 bytes inside a block of size 552 free'd
+==7348==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7348==    by 0x109277: main (file-char-count.c:25)
+==7348==  Block was alloc'd at
+==7348==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7348==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7348==    by 0x109204: main (file-char-count.c:17)
+==7348== 
+==7348== 
+==7348== HEAP SUMMARY:
+==7348==     in use at exit: 0 bytes in 0 blocks
+==7348==   total heap usage: 3 allocs, 3 frees, 9,768 bytes allocated
+==7348== 
+==7348== All heap blocks were freed -- no leaks are possible
+==7348== 
+==7348== For counts of detected and suppressed errors, rerun with: -v
+==7348== ERROR SUMMARY: 62 errors from 59 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ makevalgrind ./file-char-count file-char-count.c
+==7810== Memcheck, a memory error detector
+==7810== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7810== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==7810== Command: ./file-char-count file-char-count.c
+==7810== 
+==7810== Invalid free() / delete / delete[] / realloc()
+==7810==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7810==    by 0x109293: main (file-char-count.c:26)
+==7810==  Address 0x4a3f040 is 0 bytes inside a block of size 552 free'd
+==7810==    at 0x48369AB: free (vg_replace_malloc.c:530)
+==7810==    by 0x48EA880: fclose@@GLIBC_2.2.5 (iofclose.c:77)
+==7810==    by 0x109287: main (file-char-count.c:25)
+==7810==  Block was alloc'd at
+==7810==    at 0x483577F: malloc (vg_replace_malloc.c:299)
+==7810==    by 0x48EB0FA: __fopen_internal (iofopen.c:65)
+==7810==    by 0x109214: main (file-char-count.c:17)
+==7810== 
+590
+==7810== 
+==7810== HEAP SUMMARY:
+==7810==     in use at exit: 0 bytes in 0 blocks
+==7810==   total heap usage: 3 allocs, 4 frees, 9,768 bytes allocated
+==7810== 
+==7810== All heap blocks were freed -- no leaks are possible
+==7810== 
+==7810== For counts of detected and suppressed errors, rerun with: -v
+==7810== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+[01m[Kfile-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kfile-char-count.c:25:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kin[m[K’ is a pointer; did you mean to use ‘[01m[K->[m[K’?
+  in[01;31m[K.[m[Kfclose();
+    [01;31m[K^[m[K
+    [32m[K->[m[K
+make: *** [<builtin>: file-char-count] Error 1
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+[01m[Kfile-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kfile-char-count.c:25:4:[m[K [01;31m[Kerror: [m[K‘[01m[KFILE[m[K’ {aka ‘[01m[Kstruct _IO_FILE[m[K’} has no member named ‘[01m[Kfclose[m[K’
+  in[01;31m[K->[m[Kfclose();
+    [01;31m[K^~[m[K
+make: *** [<builtin>: file-char-count] Error 1
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ makevalgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind ./file-char-count file-char-count.c
+==7917== Memcheck, a memory error detector
+==7917== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7917== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==7917== Command: ./file-char-count file-char-count.c
+==7917== 
+579
+==7917== 
+==7917== HEAP SUMMARY:
+==7917==     in use at exit: 0 bytes in 0 blocks
+==7917==   total heap usage: 3 allocs, 3 frees, 9,768 bytes allocated
+==7917== 
+==7917== All heap blocks were freed -- no leaks are possible
+==7917== 
+==7917== For counts of detected and suppressed errors, rerun with: -v
+==7917== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c -v
+==7942== Memcheck, a memory error detector
+==7942== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7942== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==7942== Command: ./file-char-count file-char-count.c -v
+==7942== 
+usage: ./file-char-count FILE_NAME
+==7942== 
+==7942== HEAP SUMMARY:
+==7942==     in use at exit: 0 bytes in 0 blocks
+==7942==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==7942== 
+==7942== All heap blocks were freed -- no leaks are possible
+==7942== 
+==7942== For counts of detected and suppressed errors, rerun with: -v
+==7942== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c -v[K
+==7983== Memcheck, a memory error detector
+==7983== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7983== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==7983== Command: ./file-char-count file-char-count.c
+==7983== 
+579
+==7983== 
+==7983== HEAP SUMMARY:
+==7983==     in use at exit: 0 bytes in 0 blocks
+==7983==   total heap usage: 3 allocs, 3 frees, 9,768 bytes allocated
+==7983== 
+==7983== All heap blocks were freed -- no leaks are possible
+==7983== 
+==7983== For counts of detected and suppressed errors, rerun with: -v
+==7983== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-char-count$ cd ..
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files$ cd file-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-cop y.c
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c[K[K
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ls -l file-copy.c t[K
+-rw-r----- 1 ngarg3 ngarg3 1195 Nov 13 13:35 file-copy.c
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ls -l file-copy.c t
+ls: cannot access 't': No such file or directory
+-rw-r----- 1 ngarg3 ngarg3 1195 Nov 13 13:35 file-copy.c
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t[K
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ls -l file-copy.c t
+-rw-r----- 1 ngarg3 ngarg3 1195 Nov 13 13:35 file-copy.c
+-rw-r--r-- 1 ngarg3 ngarg3 1195 Nov 14 12:06 t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ cmp file-copy.c t 
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy Makefile t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ cmp Makefile t 
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ chmod a-w t  
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ /file-copy file-copy.c t
+bash: /file-copy: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ cmp Makefile t 
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ feer[K[Krror9[K() man
+bash: syntax error near unexpected token `man'
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ man ferror()
+bash: syntax error near unexpected token `('
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ man ferror()[K[K
+[?1049h[22;0;0t[?1h=FERROR(3)                             Linux Programmer's Manual                             FERROR(3)[m
+[m
+[1mNAME[0m[m
+       clearerr, feof, ferror, fileno - check and reset stream status[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<stdio.h>[0m[m
+[m
+       [1mvoid[0m [1mclearerr(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1mint[0m [1mfeof(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1mint[0m [1mferror(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1mint[0m [1mfileno(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[0m(7)):[m
+[m
+       [1mfileno[0m(): _POSIX_C_SOURCE[m
+[m
+[1mDESCRIPTION[0m[m
+       The  function [1mclearerr[0m() clears the end-of-file and error indicators for the stream pointed to[m
+       by [4mstream[24m.[m
+[m
+       The function [1mfeof[0m() tests the end-of-file indicator for the stream pointed to by  [4mstream[24m,  re‐[m
+       turning  nonzero  if it is set.  The end-of-file indicator can be cleared only by the function[m
+       [1mclearerr[0m().[m
+[m
+       The function [1mferror[0m() tests the error indicator for the stream pointed to by [4mstream[24m, returning[m
+       nonzero if it is set.  The error indicator can be reset only by the [1mclearerr[0m() function.[m
+[m
+[7m Manual page ferror(3) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ 
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ man ferror()ferror() mancmp Makefile t /file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pchmod a-w t  
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@mp Makefile t[C./file-copy Makefile t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pcmp Makefile t 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Phmod a-w t [C/file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pcmp Makefile t 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ maken ferror[K[K[K[K[K[K[K[K[K[K./file-cp[Kopt[Ky
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-cop y.c
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+cannot write t: Permission denied
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pmaken ferrorke[K
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+[01m[Kfile-copy.c:[m[K In function ‘[01m[KdoCopy[m[K’:
+[01m[Kfile-copy.c:16:3:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kferror[m[K’
+   [01;31m[Kferror[m[K(stderr, "error writing to %s: %s\n", outName, strerror(errno));
+   [01;31m[K^~~~~~[m[K
+In file included from [01m[Kfile-copy.c:2[m[K:
+[01m[K/usr/include/stdio.h:767:12:[m[K [01;36m[Knote: [m[Kdeclared here
+ extern int [01;36m[Kferror[m[K (FILE *__stream) __THROW __wur;
+            [01;36m[K^~~~~~[m[K
+make: *** [<builtin>: file-copy] Error 1
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ make./file-copy file-copy.c t[K
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-copy file-copy.c t[K
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.cdfk
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.cdfk[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[Ky dfkasdhf [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy dfkasdhf [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kf
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ rm -f t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Prm -f t
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ rm -f ./file-copy file-copy.c t
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm -f [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-copy Makefile t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ male[K[Kl[Kke
+make: *** No targets specified and no makefile found.  Stop.
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ makerm -f ./file-copy Makefile t[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./file-copy file-copy.c t
+bash: ./file-copy: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ rm -f
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ /file-copy Makefile t 
+bash: /file-copy: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ /file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ wc -l file-copy.c Makefile
+  55 file-copy.c
+  10 Makefile
+  65 total
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ wc -l t
+0 t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy
+usage: ./file-copy SRC_NAME DEST_NAME
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ter[K[K[Krm -f
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$  ls -l file-copy.c
+-rw-r----- 1 ngarg3 ngarg3 1306 Nov 14 12:16 file-copy.c
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ls -l file-copy.c t
+-rw-r----- 1 ngarg3 ngarg3 1306 Nov 14 12:16 file-copy.c
+-rw-r--r-- 1 ngarg3 ngarg3    1 Nov 14 12:22 t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ /file-copy Makefile t
+bash: /file-copy: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy Makefile t
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ rm -f
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy file-copy.c t 
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ ./file-copy Makefile t  
+error writing to t: Bad file descriptor
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ wc -l file-copy.c Makefile
+  55 file-copy.c
+  10 Makefile
+  65 total
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ wc -l t
+0 t
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/file-copy$ cd ..
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files$ cd no-buffer-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 1
+bash: ./no-buffer-copy: No such file or directory
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.000s
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/no-buffer-copy$ make
+gcc -g -Wall -std=c11    no-buffer-copy.c   -o no-buffer-copy
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/no-buffer-copy$ maketime ./no-buffer-copy `which gcc` /dev/null 1
+
+real	0m0.019s
+user	0m0.016s
+sys	0m0.000s
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 1[K0
+
+real	0m0.864s
+user	0m0.254s
+sys	0m0.608s
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/no-buffer-copy$ cd ..
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files$ cd rec-io
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ male
+bash: male: command not found
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ mal[Kke
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc -g -Wall -std=c11   -c -o dyn-array.o dyn-array.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ./gen-rand-points 100 points.dat
+average magnitude = 752.156
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ./stat-points points.dat
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ./stat-points points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgen-rand-points 100 points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+[01m[Kgen-rand-points.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kgen-rand-points.c:32:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ undeclared (first use in this function)
+   FILE *out = fopen(outName, [01;31m[Ka[m[K b "w");
+                              [01;31m[K^[m[K
+[01m[Kgen-rand-points.c:32:30:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kgen-rand-points.c:32:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kb[m[K’
+   FILE *out = fopen(outName, a[01;31m[K [m[K[32m[Kb[m[K "w");
+                               [01;31m[K^[m[K[32m[K~[m[K
+                               [32m[K)[m[K
+make: *** [<builtin>: gen-rand-points.o] Error 1
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ make
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ make
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ./gen-rand-points 100 points.dat
+average magnitude = 752.156
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ /stat-points points.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+bash: /stat-points: No such file or directory
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ /stat-points points.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./stat-points points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ algrind ./file-char-count file-char-count.c[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Kstat-points p oints.dat
+bash: algrind: command not found
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ algrind ./stat-points points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind ./stat-points points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+==12399== Memcheck, a memory error detector
+==12399== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12399== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==12399== Command: ./stat-points points.dat
+==12399== 
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+==12399== 
+==12399== HEAP SUMMARY:
+==12399==     in use at exit: 0 bytes in 0 blocks
+==12399==   total heap usage: 12 allocs, 12 frees, 15,464 bytes allocated
+==12399== 
+==12399== All heap blocks were freed -- no leaks are possible
+==12399== 
+==12399== For counts of detected and suppressed errors, rerun with: -v
+==12399== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ^C[K^C
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ exit
+exit
+
+Script done on 2019-11-14 12:39:20-05:00 [COMMAND_EXIT_CODE="130"]

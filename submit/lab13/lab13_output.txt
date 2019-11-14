@@ -1,0 +1,43 @@
+Ex1:
+original:
+input:./stdin-char-count <stdin-char-count.c
+Output:EOF = -1
+0
+^C
+
+mine:
+Input: ./stdin-char-count <stdin-char-count.c
+Output: EOF = -1
+	206
+
+Ex2:File character count
+input:./file-char-count file-char-count.c
+Output:566
+
+wc file-char-count.c
+ 27  81 566 file-char-count.c
+
+In the File character count pointer, FILE *in is not being closed, which causes the memory leak error, calling the fclose(in) function on it solves the memory leak.
+
+Ex3:
+
+Ex4:
+input: time ./no-buffer-copy `which gcc` /dev/null 1
+output:
+	real	0m0.019s
+	user	0m0.016s
+	sys	0m0.000s
+input: time ./no-buffer-copy `which gcc` /dev/null 0
+output:
+	real	0m0.864s
+	user	0m0.254s
+	sys	0m0.608s
+ex5:
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ./gen-rand-points 100 points.dat
+average magnitude = 752.156
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab13/files/rec-io$ ./stat-points points.dat
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+
