@@ -16,6 +16,11 @@ typedef struct {
  */
 typedef struct FnsData FnsData;
 
+
+const FnsData* fntrace(void *addr, FnsData *fnsData);
+FnsData * add_instr(void *rootFn, FnsData * data);
+int isPresent(void *addr, FnsData *fnsData);
+
 /** Return pointer to opaque data structure containing collection of
  *  FnInfo's for functions which are callable directly or indirectly
  *  from the function whose address is rootFn.

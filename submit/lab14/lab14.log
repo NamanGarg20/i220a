@@ -1,0 +1,110 @@
+Script started on 2019-11-21 11:40:35-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14$ cd files
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox [K[Angarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox[Kngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox &
+[1] 23083
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ DOSBox version 0.74-2
+Copyright 2002-2018 DOSBox Team, published under GNU GPL.
+---
+CONFIG: Generating default configuration.
+Writing it to /home/ngarg3/.dosbox/dosbox-0.74-2.conf
+CONFIG:Loading primary settings from config file /home/ngarg3/.dosbox/dosbox-0.74-2.conf
+MIXER:Got different values from SDL: freq 44100, blocksize 512
+ALSA:Can't subscribe to MIDI port (65:0) nor (17:0)
+MIDI:Opened device:none
+f[K
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make block.com
+as --32 -a=block.lst block.s -o block.o
+objcopy -O binary block.o block.bin
+rm block.o
+dd if=block.bin of=block.com bs=256 skip=1
+0+1 records in
+0+1 records out
+81 bytes copied, 0.00109613 s, 73.9 kB/s
+rm block.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ od -x block.com
+0000000 01eb e800 0018 02a0 3c01 7471 b90e 0032
+0000020 15e8 e800 0023 7549 ebf7 e8e8 0015 b450
+0000040 cd08 a221 0102 c358 b450 8a02 0216 cd01
+0000060 5821 b4c3 b04c cd00 5021 5153 02bb b900
+0000100 0000 a0b8 f6f0 49e9 f875 754b 59f2 585b
+0000120 00c3
+0000121
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make block.com
+make: 'block.com' is up to date.
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make block.com
+as --32 -a=block.lst block.s -o block.o
+objcopy -O binary block.o block.bin
+rm block.o
+dd if=block.bin of=block.com bs=256 skip=1
+0+1 records in
+0+1 records out
+81 bytes copied, 0.00115781 s, 70.0 kB/s
+rm block.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make block.com[1@od -x[C[C[C[C[C[C[C[C[C[C
+0000000 01eb e800 0018 02a0 3c01 7471 b90e 0019
+0000020 15e8 e800 0023 7549 ebf7 e8e8 0015 b450
+0000040 cd08 a221 0102 c358 b450 8a02 0216 cd01
+0000060 5821 b4c3 b04c cd00 5021 5153 01bb b900
+0000100 0000 a0b8 f6f0 49e9 f875 754b 59f2 585b
+0000120 00c3
+0000121
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make poll.com
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+110 bytes copied, 0.00125081 s, 87.9 kB/s
+rm poll.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ ,ake[K[K[K[Kmake poll.com
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+114 bytes copied, 0.00125517 s, 90.8 kB/s
+rm poll.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make poll.com
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+114 bytes copied, 0.00132871 s, 85.8 kB/s
+rm poll.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ maker[K o[Kpoll.com
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+117 bytes copied, 0.00141155 s, 82.9 kB/s
+rm poll.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ make key-int.com
+as --32 -a=key-int.lst key-int.s -o key-int.o
+objcopy -O binary key-int.o key-int.bin
+rm key-int.o
+dd if=key-int.bin of=key-int.com bs=256 skip=1
+0+1 records in
+0+1 records out
+209 bytes copied, 0.00157113 s, 133 kB/s
+rm key-int.bin
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ dosbox &
+[2] 27069
+[1]   Done                    dosbox
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ DOSBox version 0.74-2
+Copyright 2002-2018 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file /home/ngarg3/.dosbox/dosbox-0.74-2.conf
+MIXER:Got different values from SDL: freq 44100, blocksize 512
+ALSA:Can't subscribe to MIDI port (65:0) nor (17:0)
+MIDI:Opened device:none
+
+ngarg3@g7-28:/import/linux/home1/ngarg3/git-repos/i220a/work/lab14/files$ git add -A[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2019-11-21 12:21:33-05:00 [COMMAND_EXIT_CODE="0"]
