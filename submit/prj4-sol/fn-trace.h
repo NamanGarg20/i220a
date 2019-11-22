@@ -17,7 +17,7 @@ typedef struct {
 typedef struct FnsData FnsData;
 
 
-const FnsData* fntrace(void *addr, FnsData *fnsData);
+FnsData* fntrace(void *addr, FnsData *fnsData);
 FnsData * add_instr(void *rootFn, FnsData * data);
 int isPresent(void *addr, FnsData *fnsData);
 
